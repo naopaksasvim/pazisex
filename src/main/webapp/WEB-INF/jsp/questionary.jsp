@@ -25,7 +25,7 @@
 		  	<ul>
 		  		<c:forEach items="${game.questions}" var="question" varStatus="status">
 		  			<li>
-		  				<span class="circle">1.</span>
+		  				<span class="circle">${status.index + 1}.</span>
 		  				<span class="question">${question.questionText}</span>
 		  			<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
 						<ul class="clearfix">
