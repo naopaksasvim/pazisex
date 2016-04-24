@@ -4,38 +4,51 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="<c:url value="/resources/js/main.js" />"></script>
     <title>Pazi sex</title>
 </head>
 <body>
- 
+<aside class="left"></aside>
 
-<div id="content">
-<h1 class="entry-title">${game.gameName}</h1>
-<div id="time" class="entry-title"></div>
-<form:form method="post" action="../save" modelAttribute="game">
-  <input type="hidden" name="gameID" value="${game.gameID}"/>
-    <input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
-  <ul>
-  <c:forEach items="${game.questions}" var="question" varStatus="status">
-  <li>${question.questionText}
-  <input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
-  <ul>
-   <c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
-  <li>
-   <input type="radio" name="questions[${status.index}].usersAnswer" value="${answer.answerID}" onclick="enable()"> ${answer.answerText}<br>
- </li>
-  
-  </c:forEach>
-   </ul></li>
-  </c:forEach>
-  </ul>
-<br/>
-<input type="submit" value="Save" disabled="disabled"/>
-     
-</form:form>
+<div class="content">
+	<div class="header-logo"></div>
+	<div class="text-wrap relative">
+		<h1 class="entry-title">${game.gameName}</h1>
+		<div id="time" class="absolute"></div>
+		<form:form method="post" action="../save" modelAttribute="game" class="radio-form">
+		  	<input type="hidden" name="gameID" value="${game.gameID}"/>
+	    	<input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
+		  
+		  	<ul>
+		  		<c:forEach items="${game.questions}" var="question" varStatus="status">
+		  			<li>
+		  				<span class="circle">1.</span>
+		  				<span class="question">${question.questionText}</span>
+		  			<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
+						<ul class="clearfix">
+				 			<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
+								<li class="fleft">
+									<span class="mask-radio" >
+						 				<input type="radio" name="questions[${status.index}].usersAnswer" value="${answer.answerID}" onclick="enable()">
+						 				
+						 				<label>${answer.answerText}</label>
+						 				<i class="icon"></i>
+					 				</span>
+								</li>
+				 			</c:forEach>
+						</ul>
+		   			</li>
+				</c:forEach>
+			</ul>
+			<input type="submit" value="Save" disabled="disabled"/>
+		     
+		</form:form>
+	</div>
 </div>
+<aside class="right"></aside>
 <script>
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;

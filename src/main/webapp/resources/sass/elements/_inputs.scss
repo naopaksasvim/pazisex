@@ -74,17 +74,22 @@ input[type='checkbox']:checked:disabled ~ i.icon{
 /*Radiobutton*/
 
 input[type='radio'] ~ i.icon{
-	background: url("../images/radio-button.png") no-repeat center left;
+	//background: url("images/radio-button.png") no-repeat center left;
 }
 
 input[type='radio']:checked ~ i.icon{
-	background: url("../images/radio-button-active.png") no-repeat center left;
+	background: url("images/radio-checked.svg") repeat-x center;
 }
 
-input[type='radio']:checked:disabled ~ i.icon{
-    background: url("../images/radio-checked-disabled.png") no-repeat center left !important;
-}
-
-input[type='radio']:disabled ~ i.icon{
-    background: url("../images/radio-unchecked-disabled.png") no-repeat center left !important;
+input[type="submit"]{
+    font-family: 'BMK', Arial, sans-serif;
+    font-size: 16px;
+    outline: 0;
+    background-color: transparent;
+    
+    border: 5px solid transparent;
+    border-image: url('images/line.png') 10;
+    
+    cursor: pointer;
+    
 }

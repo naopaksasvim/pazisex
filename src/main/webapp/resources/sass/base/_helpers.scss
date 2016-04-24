@@ -56,6 +56,10 @@ $breakpoints: (
     height: auto;
 }
 
+.relative{
+    position: relative;
+}
+
 .clearfix{
     &:after{
         content: "";

@@ -12,7 +12,7 @@
 	<aside class="left"></aside>
 	<div class="content">
 		<div class="header-logo"></div>
-		<div class="text-wrap">
+		<div class="text-wrap text-center">
 			<h1 class="entry-title">Pazi sex</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
