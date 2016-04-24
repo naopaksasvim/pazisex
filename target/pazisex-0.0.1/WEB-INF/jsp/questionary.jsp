@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" isELIgnored="false" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
@@ -15,8 +15,8 @@
 <h1 class="entry-title">${game.gameName}</h1>
 <div id="time" class="entry-title"></div>
 <form:form method="post" action="../save" modelAttribute="game">
-  <input type="hidden" name="game.gameID" value="${game.gameID}"/>
-    <input type="hidden" name="game.durationMin" id="duration" value="${game.durationMin}"/> 
+  <input type="hidden" name="gameID" value="${game.gameID}"/>
+    <input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
   <ul>
   <c:forEach items="${game.questions}" var="question" varStatus="status">
   <li>${question.questionText}
@@ -24,7 +24,7 @@
   <ul>
    <c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
   <li>
-   <input type="radio" name="questions[${status.index}].usersAnswer" value="${answer.answerID}"> ${answer.answerText}<br>
+   <input type="radio" name="questions[${status.index}].usersAnswer" value="${answer.answerID}" onclick="enable()"> ${answer.answerText}<br>
  </li>
   
   </c:forEach>
@@ -32,7 +32,7 @@
   </c:forEach>
   </ul>
 <br/>
-<input type="submit" value="Save" />
+<input type="submit" value="Save" disabled="disabled"/>
      
 </form:form>
 </div>
@@ -53,7 +53,22 @@ function startTimer(duration, display) {
         }
     }, 1000);
 }
+function enable()
+{
 
+	  var names = {};
+	    $(':radio').each(function() {
+	        names[$(this).attr('name')] = true;
+	    });
+	    var count = 0;
+	    $.each(names, function() { 
+	        count++;
+	    });
+	    if ($(':radio:checked').length === count) {
+	    	 $('input[type="submit"]').prop('disabled', false);
+	    }
+	}
+	
 jQuery(function ($) {
 	console.log($("#duration").val());
 	minutes=$("#duration").val();

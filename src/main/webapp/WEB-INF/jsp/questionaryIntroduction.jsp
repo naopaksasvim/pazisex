@@ -32,6 +32,7 @@
 		<p>
 		U redu je da ne znaš sve odgovore, zbog toga smo mi tu!
 		</p>
+		<br>
 		<a href="../game/getGame/4">Nastavi</a>
 	</div>
 </div>
