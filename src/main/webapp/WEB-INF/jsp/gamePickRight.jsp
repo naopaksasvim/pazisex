@@ -14,9 +14,9 @@
 <div id="content">
 <h1 class="entry-title">${game.gameName}</h1>
 <div id="time" class="entry-title"></div>
-<form:form method="post" action="" modelAttribute="game">
-  <input type="hidden" name="game.gameID" value="${game.gameID}"/>
-    <input type="hidden" name="game.durationMin" id="duration" value="${game.durationMin}"/> 
+<form:form method="post" action="/pazisex/game/save" modelAttribute="game">
+ <input type="hidden" name="gameID" value="${game.gameID}"/>
+    <input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
   <ul>
   <c:forEach items="${game.questions}" var="question" varStatus="status">
   <li>${question.questionText}

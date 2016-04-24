@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.centare8.pazisex.entities.GameEntity;
 import com.centare8.pazisex.model.Answer;
+import com.centare8.pazisex.model.Code;
 import com.centare8.pazisex.model.Game;
 import com.centare8.pazisex.model.Question;
 import com.centare8.pazisex.repositories.GameRepository;
@@ -39,6 +40,7 @@ public class DefaultGameService implements GameService {
 		return result;
 	}
 	
+	
 	public Game getGame(int gameID){
 		List<Object[]> gameResultSet=gameRepository.getGame(gameID);
 		Game result = new Game();
@@ -68,5 +70,16 @@ public class DefaultGameService implements GameService {
 		result.setQuestions(questions);
 		return result;
 }
+	public List<Code> getCodes() {
+		List<Object[]> resultSet = gameRepository.getCodes();
+		List<Code> result = new ArrayList<Code>();
+		for(Object resultSetItem : resultSet){
+			Code code = new Code();
+			code.setCodeText((String)resultSetItem);
+			result.add(code);
+	
+		}
 
+		return result;
+	}
 }

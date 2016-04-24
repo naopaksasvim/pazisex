@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import com.centare8.pazisex.entities.UserResultEntity;
+import com.centare8.pazisex.model.Code;
 import com.centare8.pazisex.model.Game;
 import com.centare8.pazisex.model.Question;
 import com.centare8.pazisex.model.User;
@@ -65,7 +66,10 @@ public class GameController {
     public ModelAndView save(@ModelAttribute("game") Game game) {
        
         List<UserResultEntity> resultsToSave=new ArrayList<UserResultEntity>();
-     
+        if(game.getGameID()==2)
+		{
+			return new ModelAndView("codePage","game",game);
+		}
 		for (Question question : game.getQuestions()) {
 		    UserResultEntity userResult=new UserResultEntity();
 		    userResult.setAnswerID(question.getUsersAnswer());
@@ -79,9 +83,28 @@ public class GameController {
 		{Game nextGame = gameService.getGame(5);
 		return new ModelAndView("questionary","game",nextGame);
 		}
+		
 		userResultService.save(resultsToSave);
          User user=new User();
         return new ModelAndView("user","user",user);
+    }
+	@RequestMapping(value = "/enterCode", method = RequestMethod.POST)
+    public ModelAndView enterCode(@ModelAttribute("game") Game game) {
+       
+		List<Code> codes = gameService.getCodes();
+     
+     Code codeToCheck=new Code();
+     codeToCheck.setCodeText(game.getGameName());
+     boolean index=codes.contains(codeToCheck);
+		if(!codes.contains(codeToCheck))
+		{
+			return new ModelAndView("codePage","game",game);
+		}
+		else
+		{
+			Game nextGame = gameService.getGame(3);
+			return new ModelAndView("gameShoot","game", nextGame);
+		}
     }
 	
 	@RequestMapping(value = "/introduction", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
