@@ -14,7 +14,7 @@
 <div id="content">
 <h1 class="entry-title">${game.gameName}</h1>
 <div id="time" class="entry-title"></div>
-<form:form method="post" action="../save" modelAttribute="game">
+<form:form method="post" action="/pazisex/game/save" modelAttribute="game">
   <input type="hidden" name="gameID" value="${game.gameID}"/>
     <input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
   <ul>
@@ -49,7 +49,8 @@ function startTimer(duration, display) {
         display.text(minutes + ":" + seconds);
 
         if (--timer < 0) {
-            timer = duration;
+           $('form').submit();
+        //	timer = duration;
         }
     }, 1000);
 }

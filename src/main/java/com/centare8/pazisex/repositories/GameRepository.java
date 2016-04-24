@@ -21,4 +21,7 @@ public interface GameRepository extends JpaRepository<GameEntity, Integer>{
    
    @Query(value="Select Answer.answerID,  Answer.questionID,  Answer.answerText,Answer.isCorrect From  Answer Where Answer.questionID = :questionID",nativeQuery=true)
    List<Object[]> getAnswersForQuestion(@Param("questionID") int questionID);
+   
+  	 @Query(value="Select Codes.code From Codes",nativeQuery=true)
+  	 List<Object[]> getCodes();
 }
