@@ -95,16 +95,19 @@ public class GameController {
      
      Code codeToCheck=new Code();
      codeToCheck.setCodeText(game.getGameName());
-     boolean index=codes.contains(codeToCheck);
-		if(!codes.contains(codeToCheck))
-		{
+    
+     for(int i=0; i<codes.size();i++)
+     {
+    	 Code code =codes.get(i);
+    	 if(code.getCodeText().equals(game.getGameName()))
+    	 {
+    		 Game nextGame = gameService.getGame(3);
+ 			return new ModelAndView("gameShoot","game", nextGame);
+    	 }
+     }
+		
 			return new ModelAndView("codePage","game",game);
-		}
-		else
-		{
-			Game nextGame = gameService.getGame(3);
-			return new ModelAndView("gameShoot","game", nextGame);
-		}
+	
     }
 	
 	@RequestMapping(value = "/introduction", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
