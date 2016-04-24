@@ -1,0 +1,29 @@
+{
+	"title": "Game",
+	"type": "object",
+	"id": "game",
+	 "properties": {
+	
+	"gameID" :{ "type":"integer"},
+	"gameName" : { "type":"string"},
+	"durationMin" : { "type":"integer"},
+	
+	 "questions": {
+        "type": "object",
+        "properties": {
+			"questionID" : { "type":"integer"},
+			"questionText" : { "type":"string"},
+			"answers" : {
+			 "type": "object",
+				"properties": {
+					"answerID" : {"type":"integer"},
+					"answerText" :{ "type":"string"},
+					"isCorrect" :  "type": "boolean",
+					"title": "yes / no"
+				}
+				}
+			
+		}
+	}
+}
+}
