@@ -17,7 +17,7 @@
 <div class="content">
 	<div class="header-logo"></div>
 	<div class="text-wrap relative">
-		<h1 class="entry-title">${game.gameName}</h1>
+		<h1 class="entry-title long">${game.gameName}</h1>
 		<div id="time" class="absolute"></div>
 		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form">
 		  	<input type="hidden" name="gameID" value="${game.gameID}"/>
