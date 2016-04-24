@@ -4,33 +4,38 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
     <title>Pazi sex</title>
 </head>
 <body>
  
-
-<div id="content">
-<h1 class="entry-title">Pazi sex</h1>
-<p>
-Pre nego što počnemo, molim te da popuniš upitnik! Upitnik je potpuno anoniman, tako da se opusti
-kada odgovaraš na pitanja, ne delimo ocene.
-</p>
-<p>
-U prvom delu "Stavovi" nas zanima kako razmišljaš. Ne postje tačni i netačni odgovori, već samo kako
-ti misliš da bi ovaj svet trebao da izgleda. Ne preksači pitanja, i na svako
-pitanje se odluči za neku od ponudjenih opcija: slažem se, ne slažem se, ne znam.
- </p>
-<p>
-U drugom delu bismo voleli da vidimo šta mladi tvojih godina znaju
-o muškom i ženskom telu, seksu, polno prenosivim infekcijama i kontracepciji.
-Za svako pitanje odgovori sa tačno, netačno, ne znam.
-</p>
-<p>
-U redu je da ne znaš sve odgovore, zbog toga smo mi tu!
-</p>
-<a href="../game/getGame/4">Nastavi</a>
+<aside class="left"></aside>
+<div class="content">
+	<div class="header-logo"></div>
+	<div class="text-wrap text-center">
+		<h1 class="entry-title">Pazi sex</h1>
+		<p>
+		Pre nego što počnemo, molim te da popuniš upitnik! Upitnik je potpuno anoniman, tako da se opusti
+		kada odgovaraš na pitanja, ne delimo ocene.
+		</p>
+		<p>
+		U prvom delu "Stavovi" nas zanima kako razmišljaš. Ne postje tačni i netačni odgovori, već samo kako
+		ti misliš da bi ovaj svet trebao da izgleda. Ne preksači pitanja, i na svako
+		pitanje se odluči za neku od ponudjenih opcija: slažem se, ne slažem se, ne znam.
+		 </p>
+		<p>
+		U drugom delu bismo voleli da vidimo šta mladi tvojih godina znaju
+		o muškom i ženskom telu, seksu, polno prenosivim infekcijama i kontracepciji.
+		Za svako pitanje odgovori sa tačno, netačno, ne znam.
+		</p>
+		<p>
+		U redu je da ne znaš sve odgovore, zbog toga smo mi tu!
+		</p>
+		<a href="../game/getGame/4">Nastavi</a>
+	</div>
 </div>
+<aside class="right"></aside>
 
 </body>
 </html>

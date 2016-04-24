@@ -1,0 +1,130 @@
+/* body with frame */
+
+aside{
+    height: 100%;
+    top: 0;
+    position: fixed;
+    width: 100px;
+    
+    &.left{
+        background: url('images/aside-left.png') repeat-y right top;
+        background-size: contain;
+        left: 0;
+    }
+    
+    &.right{
+        background: url('images/aside-right.png') repeat-y left top;
+        background-size: contain;
+        right: 0;
+    }
+}
+
+.text-wrap{
+    &.text-center{
+        text-align: center;
+    }
+    
+    max-width: 600px;
+    margin: 0 auto;
+    
+    h1{
+        margin-bottom: 20px;
+    }
+}
+
+.content{
+    padding: 40px 15px 0 15px;
+    margin: 0 100px;
+}
+
+.radio-form{
+    margin-bottom: 40px;
+    
+    input[type="submit"]{
+        display: block;
+
+        margin: 0 auto;
+        border-image-outset: 5px;
+    }
+    
+    color: black;
+    >ul{
+        >li{
+            margin-bottom: 20px;
+            
+            >span{
+                display: inline-block;
+                vertical-align: middle;
+                
+                &.question{
+                    width: calc(100% - 48px);
+                }
+                
+                &.circle{
+                    background: url("images/question-circle.svg") no-repeat center;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 32px;
+                    display: inline-block;
+                    background-size: contain;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    font-family: 'BMK';
+                    text-align: center;
+                    text-indent: 4px;
+                }
+            }
+            
+            >ul{
+                margin-top: 20px;
+                
+                >li{
+                    width: 33%;
+                    text-align: center;
+                    
+                    span{
+                        width: auto;
+                        padding: 10px 0;
+                        
+                        input,
+                        i{
+                            width: 100% !important;
+                        }
+                        
+                        i{
+                            top: 3px !important;
+                            height: 30px !important;
+                            z-index: -1;
+                        }
+                    }
+                    
+                    label{
+                        font-family: 'BMK', Arial, sans-serif;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#time{
+    background: url('images/clock.svg') no-repeat center;
+    width: 80px;
+    height: 80px;
+    display: block;
+    font-family: 'BMK', Arial, sans-serif;
+    color: black;
+    font-size: 18px;
+    line-height: 82px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 10;
+    
+    &.absolute{
+        position: absolute;
+        top: -35px;
+        right: 0;
+    }
+}
+    

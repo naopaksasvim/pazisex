@@ -1,0 +1,108 @@
+@font-face{
+       font-family: BMK;
+       src: url('fonts/Bmk_typeface.ttf');
+}
+body, input, textarea {
+	
+    font:13px Arial, MetaN, sans-serif;
+    line-height:1.4em;
+}
+body {
+    background: url("images/back.jpg") repeat scroll 0 0 transparent;
+    color: #555555;
+    line-height: 1.1em;
+}
+
+/*#content{
+    margin: 0 auto;
+    height: 100%;
+}*/
+
+html,  div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ a {
+ margin-top:15px;
+ font-family: BMK,sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+a:visited {
+    color: #000;
+}
+
+a:link {
+    color: #000;
+}
+
+.entry-title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+	clear: both;
+}
+
+.entry-title{
+    background: url("images/line.png") repeat-x scroll left bottom transparent;
+    color: #000000;
+    display: table;
+    font-family: BMK,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2em;
+    padding: 0 0 10px;
+}
+
+p{padding-bottom: 15px;}
+
+.playing-area {
+    background-color: #333;
+    width: 80%;
+    height: 600px;
+    margin-left: 2%;
+    display: inline-block;
+}
+
+.score {
+    width: 15%;
+    height: 600px;
+    color: #ffffff;
+    text-align: center;
+    border: solid white 1px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 3em;
+    margin-left: 10px;
+}
+
+.input {
+    width: 80%;
+    height: 10%;
+    border: dotted green 1px;
+    margin-left: 2%;
+}
+
+.word {
+    color: #fff;
+    font-size: 2em;
+    font-family: sans-serif;
+    position: relative;
+    width:300px;
+    height:300px;
+}
+
+#data {
+    font-size: 2em;
+    background-color: black;
+    color: yellow;
+    width: 70%;
+}

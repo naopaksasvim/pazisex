@@ -4,22 +4,27 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
     <title>Pazi sex</title>
 </head>
 <body>
- 
+	<aside class="left"></aside>
+	<div class="content">
+		<div class="header-logo"></div>
+		<div class="text-wrap text-center">
+			<h1 class="entry-title">Pazi sex</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+			</p>
+			<a href="game/questionaryAbout">Nastavi</a>
+		</div>
+	</div>
+	<aside class="right"></aside>
 
-<div id="content">
-<h1 class="entry-title">Pazi sex</h1>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-</p>
-<a href="game/questionaryAbout">Nastavi</a>
-</div>
 
 </body>
 </html>

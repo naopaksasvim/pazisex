@@ -1,0 +1,13 @@
+.header-logo{
+    background: url('images/logo.svg') no-repeat left center;
+    background-size: contain !important;
+    display: block;
+    width: 100%;
+    height: 55px;
+    margin: 0 0 40px 20px;
+    
+    @include respond-to('small'){
+        background: url("images/logo.svg") no-repeat center;
+        margin: 0 auto 40px auto;
+    }
+}
