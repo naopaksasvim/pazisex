@@ -1,0 +1,27 @@
+/* body with frame */
+
+aside{
+    height: 100%;
+    top: 0;
+    position: fixed;
+    width: 100px;
+    
+    &.left{
+        background: url('images/aside-left.png') no-repeat right red;
+        left: 0;
+    }
+    
+    &.right{
+        background: url('images/aside-right.png') no-repeat left blue;
+        right: 0;
+    }
+}
+
+.text-wrap{
+    text-align: center;
+}
+
+.content{
+    margin: 0 100px;
+}
+    
