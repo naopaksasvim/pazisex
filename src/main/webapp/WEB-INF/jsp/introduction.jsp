@@ -13,31 +13,39 @@
 
 <div class="content">
 	<div class="header-logo"></div>
-		<div class="text-wrap text-center">
-	<h1 class="entry-title">Uvod</h1>
-	</div>
-	<img src="/pazisex/resources/css/images/marija_stefan.png" alt="marija i stefan" />
-	<div id="container">
-	<div id='div1' style="display:none;"> 
-	  cao, ja sam marija!
-	</div>
+		<div class="text-wrap text-center bubble-holder">
+			<h1 class="entry-title">Uvod</h1>
+			<img 
+				class="img-responsive" 
+				src="/pazisex/resources/css/images/marija_stefan.png"
+				alt="marija i stefan"
+				style="margin-top: 80px;" />
+		
 	
-	<div id='div2' style="display:none;"> 
-	cao, ja sam stefan!
-	</div>
 	
-	<div id='div3' style="display:none;"> 
-	juce smo se posvadjali jer sam ja rekla da hocu da poravljam bajs.
-	</div>
-	<div id='div4' style="display:none;"> 
-	... ali muskarci su urodjeno bolji u nekim stvarima
-	</div>
-	<div id='div5' style="display:none;"> 
-	ne u ovome! slazem se da postoje neke razlike, na primer ne moze muskarac da bude X
-	</div>
-	<div id='div6' style="display:none;"> 
-	sto ne moze?
-	</div>
+		<div id='div1' style="display:none;" class="left"> 
+		  	<span>Cao, ja sam Marija!</span>
+		</div>
+		
+		<div id='div2' style="display:none;" class="right"> 
+			<span>Cao, ja sam Stefan!</span>
+		</div>
+		
+		<div id='div3' style="display:none;" class="left"> 
+			<span>Juce smo se posvadjali jer sam ja rekla da hocu da poravljam bajs.</span>
+		</div>
+		
+		<div id='div4' style="display:none;" class="right"> 
+		<span>... Ali muskarci su urodjeno bolji u nekim stvarima</span>
+		</div>
+		
+		<div id='div5' style="display:none;" class="left"> 
+			<span>Ne u ovome! slazem se da postoje neke razlike, na primer ne moze muskarac da bude X</span>
+		</div>
+		
+		<div id='div6' style="display:none;" class="right"> 
+			<span>Sto ne moze?</span>
+		</div>
 	</div>
 </div>
 <aside class="right"></aside>
