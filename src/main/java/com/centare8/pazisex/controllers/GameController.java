@@ -70,7 +70,7 @@ public class GameController {
     public ModelAndView save(@ModelAttribute("game") Game game) {
        
         List<UserResultEntity> resultsToSave=new ArrayList<UserResultEntity>();
-        if(game.getGameID()==2)
+        if(game.getGameID()==2 || game.getGameID()==6)
 		{
 			return new ModelAndView("codePage","game",game);
 		}
@@ -105,6 +105,9 @@ public class GameController {
     	 Code code =codes.get(i);
     	 if(code.getCodeText().equals(game.getGameName()))
     	 {
+    		 if(game.getGameID()==2){
+    			 return new ModelAndView("organsIntroduction","dummy","");
+    		 }
     		  return new ModelAndView("redirect:" + "/game/getGame/3");
     		// Game nextGame = gameService.getGame(3);
  			//return new ModelAndView("gameShoot","game", nextGame);
