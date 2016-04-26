@@ -19,7 +19,7 @@
 	<div class="text-wrap relative">
 		<h1 class="entry-title">${game.gameName}</h1>
 		<div id="time" class="absolute"></div>
-		<form:form method="post" action="/pazisex/game/organsConfirm" modelAttribute="game" class="radio-form">
+		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form">
 		  	<input type="hidden" name="gameID" value="${game.gameID}"/>
 	    	<input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
 		  
@@ -34,8 +34,8 @@
 				 			<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
 								<li class="fleft">
 									<span class="mask-radio" >
-						 				<input type="radio" name="questions[${status.index}].usersAnswer" value="${answer.isCorrect}" onclick="enable(this)">
-						 				
+						 				<input type="radio" name="questions[${status.index}].usersAnswer" value="${answer.answerID}"  onclick="enable(${answer.isCorrect})">
+						 			
 						 				<label>${answer.answerText}</label>
 						 				<i class="icon"></i>
 					 				</span>
@@ -45,8 +45,7 @@
 		   			</li>
 				</c:forEach>
 			</ul>
-		<!-- 	<input type="submit" value="Save" disabled="disabled"/> -->
-		     
+	
 		</form:form>
 	</div>
 
@@ -73,7 +72,7 @@ function startTimer(duration, display) {
 var i=0;
 function enable(e)
 {
-if(e.value=="true")
+if(e==true)
 	{
 	$('#quest'+i).hide();
 	if($('#organs ul').length==i+1)

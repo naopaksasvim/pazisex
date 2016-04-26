@@ -19,7 +19,7 @@ public interface GameRepository extends JpaRepository<GameEntity, Integer>{
    @Query(value="Select Question.questionID, Question.questionText From Question Inner Join question2Game On Question.questionID = question2Game.questionID Where question2Game.gameID = :gameID",nativeQuery=true)
    List<Object[]> getQuestionsForGame(@Param("gameID") int gameID);
    
-   @Query(value="Select Answer.answerID,  Answer.questionID,  Answer.answerText,Answer.isCorrect From  Answer Where Answer.questionID = :questionID",nativeQuery=true)
+   @Query(value="Select Answer.answerID,  Answer.questionID,  Answer.answerText,Answer.isCorrect From  Answer Where Answer.questionID = :questionID order by  Answer.answerID",nativeQuery=true)
    List<Object[]> getAnswersForQuestion(@Param("questionID") int questionID);
    
   	 @Query(value="Select Codes.code From Codes",nativeQuery=true)
