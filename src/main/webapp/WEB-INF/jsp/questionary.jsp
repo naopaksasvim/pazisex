@@ -11,13 +11,19 @@
     <title>Pazi sex</title>
 </head>
 <body>
+<div class="sk-folding-cube">
+  	<div class="sk-cube1 sk-cube"></div>
+  	<div class="sk-cube2 sk-cube"></div>
+  	<div class="sk-cube4 sk-cube"></div>
+	<div class="sk-cube3 sk-cube"></div>
+</div>
 <aside class="left"></aside>
 
 
 <div class="content">
 	<div class="header-logo"></div>
 	<div class="text-wrap relative">
-		<h1 class="entry-title long">${game.gameName}</h1>
+		<h1 class="entry-title">${game.gameName}</h1>
 		<div id="time" class="absolute"></div>
 		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form">
 		  	<input type="hidden" name="gameID" value="${game.gameID}"/>
@@ -48,7 +54,6 @@
 		     
 		</form:form>
 	</div>
-
 </div>
 <aside class="right"></aside>
 <script>
