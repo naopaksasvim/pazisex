@@ -1,4 +1,5 @@
-$( document ).ready(function() {
-    /*$('input[type="radio"]').wrap('<span class="mask-radio"></span>');
-    $('<i class="icon"></i>').insertAfter('input[type="radio"]');*/
+$(document).ready(function() {
+	$('a, input[type="submit"]').on('click', function(){
+		$('aside, .content').addClass('blured');$('.sk-folding-cube').show();
+	});
 });

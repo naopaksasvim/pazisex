@@ -1,10 +1,24 @@
 /* body with frame */
+aside,
+.content{
+    transition: 0.3s all ease-in-out;
+    
+    &.blured{
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+        -o-filter: blur(2px);
+    }
+}
 
 aside{
     height: 100%;
     top: 0;
     position: fixed;
     width: 100px;
+    
+    @include respond-to('xsmall'){
+        width: 50px;
+    }
     
     &.left{
         background: url('images/aside-left.png') repeat-y right top;
@@ -30,11 +44,20 @@ aside{
     h1{
         margin-bottom: 20px;
     }
+    
+    a{
+        display: block;
+        margin-top: 40px;
+    }
 }
 
 .content{
     padding: 40px 15px 0 15px;
     margin: 0 100px;
+    
+    @include respond-to('xsmall'){
+        margin: 0 50px;
+    }
 }
 
 .input-fields{
@@ -229,6 +252,99 @@ aside{
     #6{
         
     }*/
+}
+
+/* loader */
+.sk-folding-cube {
+    display: none;
+    z-index: 10;
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f4d200;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
 }
 
 .playing-area-holder{
