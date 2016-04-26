@@ -56,6 +56,10 @@ public class GameController {
 			
 			return new ModelAndView("gameShoot","game", game);
 		}
+		if(id==6)
+		{
+			return new ModelAndView("organs","game",game);
+		}
 		else
 		{
 			return new ModelAndView("gamePickRight","game",game);
@@ -101,8 +105,9 @@ public class GameController {
     	 Code code =codes.get(i);
     	 if(code.getCodeText().equals(game.getGameName()))
     	 {
-    		 Game nextGame = gameService.getGame(3);
- 			return new ModelAndView("gameShoot","game", nextGame);
+    		  return new ModelAndView("redirect:" + "/game/getGame/3");
+    		// Game nextGame = gameService.getGame(3);
+ 			//return new ModelAndView("gameShoot","game", nextGame);
     	 }
      }
 		

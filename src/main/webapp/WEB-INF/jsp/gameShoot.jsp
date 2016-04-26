@@ -15,8 +15,8 @@
 <h1 class="entry-title">${game.gameName}</h1>
 <div id="time" class="entry-title"></div>
 <form:form method="post" action="" modelAttribute="game">
-  <input type="hidden" name="game.gameID" value="${game.gameID}"/>
-    <input type="hidden" name="game.durationMin" id="duration" value="${game.durationMin}"/> 
+  <input type="hidden" name="gameID" value="${game.gameID}"/>
+    <input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
   <div id="questions">
   <c:forEach items="${game.questions}" var="question" varStatus="status">
   
