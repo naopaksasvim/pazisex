@@ -10,42 +10,47 @@
 </head>
 <body>
  
+<aside class="left"></aside>
+<div class="content">
+	<div class="header-logo"></div>
+	<div class="text-wrap" style="position: relative;">
+		<h1 class="entry-title" style="margin-bottom: 80px;">${game.gameName}</h1>
+		<div id="time" class="entry-title" style="position: absolute; top: -20px; right: 5px;"></div>
+		<form:form method="post" action="" modelAttribute="game">
+			<input type="hidden" name="game.gameID" value="${game.gameID}"/>
+			<input type="hidden" name="game.durationMin" id="duration" value="${game.durationMin}"/>
+			<div class="playing-area-holder">
+			
+			</div> 
+  			<div id="questions">
+  			<c:forEach items="${game.questions}" var="question" varStatus="status">
+  				<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
+      			<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
+     			<div id="question[${statusAnswer.index }]">
+	     			<input type="hidden" id="answer${statusAnswer.index}.answerText" name="answer[${statusAnswer.index}].answerText" value="${answer.answerText}"/>
+	     			<input type="hidden" id="answer${statusAnswer.index}.isCorrect" name="answer[${statusAnswer.index}].isCorrect" value="${answer.isCorrect}"/>
+	   				<c:if test="${answer.isCorrect==true }">
+	   					<div id="answer[${statusAnswer.index}]" class="${answer.isCorrect}" >
+							${answer.answerText}
+	   					</div>
+					</c:if>
+		 			<c:if test="${answer.isCorrect==true }">
+	   					<div id="answer[${statusAnswer.index}]" class="${answer.isCorrect}" style="display:none">
+	   						${answer.answerText}
+	   					</div>
+					</c:if>
+  				</div>
+  				</c:forEach>
 
-<div id="content">
-<h1 class="entry-title">${game.gameName}</h1>
-<div id="time" class="entry-title"></div>
-<form:form method="post" action="" modelAttribute="game">
-  <input type="hidden" name="game.gameID" value="${game.gameID}"/>
-    <input type="hidden" name="game.durationMin" id="duration" value="${game.durationMin}"/> 
-  <div id="questions">
-  <c:forEach items="${game.questions}" var="question" varStatus="status">
-  
-  <input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
-      <c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
-     <div id="question[${statusAnswer.index }]">
-     <input type="hidden" id="answer${statusAnswer.index}.answerText" name="answer[${statusAnswer.index}].answerText" value="${answer.answerText}"/>
-     <input type="hidden" id="answer${statusAnswer.index}.isCorrect" name="answer[${statusAnswer.index}].isCorrect" value="${answer.isCorrect}"/>
-   <c:if test="${answer.isCorrect==true }">
-   <div id="answer[${statusAnswer.index}]" class="${answer.isCorrect}" >
-   
-   ${answer.answerText}
-   </div>
-	</c:if>
-	 <c:if test="${answer.isCorrect==true }">
-   <div id="answer[${statusAnswer.index}]" class="${answer.isCorrect}" style="display:none">
-   ${answer.answerText}
-   </div>
-	</c:if>
-  </div>
-  </c:forEach>
-
-  </c:forEach>
-  </div>
-<br/>
-<input type="submit" value="Save" />
+  			</c:forEach>
+  			</div>
+			<br/>
+			<input type="submit" value="Nastavi" style="display: block; margin-top: 40px; margin: 40px auto;" />
      
-</form:form>
+		</form:form>
+	</div>
 </div>
+<aside class="right"></aside>
 <script>
 
 function startTimer(duration, display) {
@@ -82,21 +87,12 @@ $(function(){
 		index=0;
 		
     // create divs
-    $('<div>', { class: 'playing-area' }).appendTo('body');
-    $('<div>', { class: 'score' }).appendTo('body');
-  //  $('<div>', { class: 'input' }).appendTo('body');
-
+    $('<div>', { class: 'score' }).appendTo('.playing-area-holder');
+    $('<div>', { class: 'playing-area' }).appendTo('.playing-area-holder');
+    
     // create scoreboard
-    $('<section><section>Score<p>' + score + '</p></section></section>').appendTo('.score');
+    $('<div><label>Score</label><p>' + score + '</p></div>').appendTo('.score');
 
-    // create input field and buttons for game
-    //$('<input>', { type: 'text', id: 'data' }).appendTo('.input').focus();
-    //$('<input>', { type: 'button', id: 'stop', value: 'Stop' }).appendTo('.input');
-    //$('<input>', { type: 'button', id: 'continue', value: 'Continue' }).appendTo('.input');
-
-    //create audio element
-  
-   //$.get('../files/words.txt', runApplication);
 	$.get('',runApplication)
     function runApplication(data) {
         fillOutArrayData();
@@ -156,7 +152,7 @@ $(function(){
         $('#data').val('');
         displayWord();
         $('.word').css({
-            'left': (Math.random() * $('#content').width()) + 'px',
+            'left': (Math.random() * $('.playing-area').width()) + 'px',
            
         });
         startFall();
