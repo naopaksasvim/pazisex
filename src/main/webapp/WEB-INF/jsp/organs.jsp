@@ -19,14 +19,15 @@
 	<div class="text-wrap relative">
 		<h1 class="entry-title">${game.gameName}</h1>
 		<div id="time" class="absolute"></div>
-		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form">
+		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form" style="margin-bottom: 0px;">
 		  	<input type="hidden" name="gameID" value="${game.gameID}"/>
 	    	<input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
 		  
 		  	<ul id="organs">
 		  		<c:forEach items="${game.questions}" var="question" varStatus="status">
 		  			<li id="quest${status.index}" style="display:none">
-		  			<img src="/pazisex/resources/css/images/organs/${question.questionText}.png"/>
+		  			<img src="/pazisex/resources/css/images/organs/${question.questionText}.png"
+		  			style="display: block; margin: 0 auto;"/>
 		  			
 		  				
 		  			<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>

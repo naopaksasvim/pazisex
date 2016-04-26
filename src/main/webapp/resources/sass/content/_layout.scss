@@ -147,6 +147,7 @@ aside{
                     span{
                         width: auto;
                         padding: 10px 0;
+                        cursor: pointer;
                         
                         input{
                             height: 30px;
@@ -443,6 +444,30 @@ aside{
         font-family: 'BMK';
         font-size: 14px;
         color: black;
+    }
+}
+
+#organs{
+    li{
+        img{
+            @include respond-to('xsmall'){
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        
+        ul{
+            li{
+                @include respond-to('xsmall'){
+                    float: none;
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
     
