@@ -169,6 +169,10 @@ aside{
                     label{
                         font-family: 'BMK', Arial, sans-serif;
                         color: black;
+                        
+                        @include respond-to('xsmall'){
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -216,22 +220,42 @@ aside{
         
         >div{
             position: absolute;
-            top: 40px;
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            bottom: calc(100% - 20px);
+            bottom: -moz-calc(100% - 20px);
 
             span{
-                @include vertical-align(absolute);
+                color: black;
+                font-size: 14px;
+            }
+            
+            &:after{
+                position: absolute;
+                content: '';
+                background: url('images/bubbles.svg') no-repeat center;
+                width: 30px;
+                height: 10px;
+                bottom: -30px;
+                left: 50%;
+                
             }
 
             &.left{
-                background: url('images/bubble-left.svg') no-repeat center;
-                left: 0;
+                &:after{
+                    transform: rotate(50deg);
+                    -webkit-transform: rotate(50deg);
+                }
             }
 
             &.right{
-                background: url('images/bubble-right.svg') no-repeat center;
                 right: 0;
+
+                &:after{
+                    bottom: -30px;
+                    left: 35%;
+                    transform: rotate(-50deg);
+                    -webkit-transform: rotate(-50deg);
+                }
             }
         }
     }
