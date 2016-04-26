@@ -2,6 +2,7 @@
 aside,
 .content{
     transition: 0.3s all ease-in-out;
+    will-change: filter, -webkit-filter;
     
     &.blured{
         filter: blur(2px);
@@ -147,6 +148,12 @@ aside{
                         width: auto;
                         padding: 10px 0;
                         
+                        input{
+                            height: 30px;
+                            /* vertical-align: middle; */
+                            top: 0;
+                        }
+                        
                         input,
                         i{
                             width: 100% !important;
@@ -259,23 +266,27 @@ aside{
     display: none;
     z-index: 10;
     margin: 20px auto;
+    position: fixed;
     width: 100px;
     height: 100px;
-    position: fixed;
     top: calc(50% - 50px);
     left: calc(50% - 50px);
     -webkit-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
+    
+    @include respond-to('small'){
+        display: none !important;
+    }
 }
 
 .sk-folding-cube .sk-cube {
-  float: left;
-  width: 50%;
-  height: 50%;
-  position: relative;
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1); 
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 .sk-folding-cube .sk-cube:before {
   content: '';
@@ -328,7 +339,7 @@ aside{
     -webkit-transform: perspective(140px) rotateY(180deg);
             transform: perspective(140px) rotateY(180deg);
     opacity: 0; 
-  } 
+  }
 }
 
 @keyframes sk-foldCubeAngle {
