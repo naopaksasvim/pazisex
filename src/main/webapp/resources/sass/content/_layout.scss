@@ -106,9 +106,19 @@ aside{
             >ul{
                 margin-top: 20px;
                 
+                &.small{
+                    width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
                 >li{
                     width: 33%;
                     text-align: center;
+                    
+                    &.half-width{
+                        width: 50%;
+                    }
                     
                     span{
                         width: auto;
@@ -171,23 +181,28 @@ aside{
     position: relative;
     
     >div{
-        position: absolute;
-        top: 40px;
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        position: relative;
         
-        span{
-            @include vertical-align(absolute);
-        }
-        
-        &.left{
-            background: url('images/bubble-left.svg') no-repeat center;
-            left: 0;
-        }
-        
-        &.right{
-            background: url('images/bubble-right.svg') no-repeat center;
-            right: 0;
+        >div{
+            position: absolute;
+            top: 40px;
+            width: 150px;
+            height: 150px;
+
+            span{
+                @include vertical-align(absolute);
+            }
+
+            &.left{
+                background: url('images/bubble-left.svg') no-repeat center;
+                left: 0;
+            }
+
+            &.right{
+                background: url('images/bubble-right.svg') no-repeat center;
+                right: 0;
+            }
         }
     }
     

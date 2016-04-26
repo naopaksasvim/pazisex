@@ -9,20 +9,18 @@
     <title>Pazi sex</title>
 </head>
 <body>
- 
-
-<div id="content">
-<h1 class="entry-title">Za nastavak unesite kod</h1>
-<div id="time" class="entry-title"></div>
-<form:form method="post" action="/pazisex/game/enterCode" modelAttribute="game">
-  <input type="hidden" name="gameID" value="${game.gameID}"/>
-    <input type="text" name="gameName"  value=""/> 
- 
-<br/>
-<input type="submit" value="Save" />
-     
-</form:form>
+<aside class="left"></aside>
+<div class="content">
+	<h1 class="entry-title">Za nastavak unesite kod</h1>
+	<form:form method="post" action="/pazisex/game/enterCode" modelAttribute="game">
+		<ul class="input-fields">
+			<input type="hidden" name="gameID" value="${game.gameID}"/>
+			<li><label>Kod:</label></li>
+			<li><input type="text" name="gameName"  value=""/></li>
+			<li><input type="submit" value="Nastavi" /></li>
+		</ul>
+	</form:form>
 </div>
-
+<aside class="right"></aside>
 </body>
 </html>

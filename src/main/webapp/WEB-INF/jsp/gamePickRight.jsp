@@ -10,32 +10,45 @@
 </head>
 <body>
  
+<aside class="left"></aside>
 
-<div id="content">
-<h1 class="entry-title long">${game.gameName}</h1>
-<div id="time"></div>
-<form:form method="post" action="/pazisex/game/save" modelAttribute="game">
- <input type="hidden" name="gameID" value="${game.gameID}"/>
-    <input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
-  <ul>
-  <c:forEach items="${game.questions}" var="question" varStatus="status">
-  <li>${question.questionText}
-  <input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
-  <ul>
-   <c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
-  <li>
-   <input type="radio" name="questions[${status.index}].usersAnswer" value="${answer.answerID}"> ${answer.answerText}<br>
- </li>
-  
-  </c:forEach>
-   </ul></li>
-  </c:forEach>
-  </ul>
-<br/>
-<input type="submit" value="Save" />
-     
-</form:form>
+
+<div class="content">
+	<div class="header-logo"></div>
+	<div class="text-wrap text-center bubble-holder">
+	<h1 class="entry-title">${game.gameName}</h1>
+	<div id="time"></div>
+		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form">
+			<input type="hidden" name="gameID" value="${game.gameID}"/>
+		   	<input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
+				<ul>
+					<c:forEach items="${game.questions}" var="question" varStatus="status">
+					<li>
+						<span class="circle">${status.index + 1}.</span>
+						<span>${question.questionText}</span>
+						
+						<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
+						
+						<ul class="clearfix small">
+							<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
+								<li class="fleft half-width">
+									<span class="mask-radio">
+							 			<input type="radio" name="questions[${status.index}].usersAnswer" value="${answer.answerID}">
+							 			<label>${answer.answerText}</label>
+										<i class="icon"></i>
+							 		</span>
+								</li>
+							</c:forEach>
+						</ul>
+					</li>
+					</c:forEach>
+				</ul>
+		<br/><br/>
+		<input type="submit" value="Save" />
+		</form:form>
+	</div>
 </div>
+<aside class="right"></aside>
 <script>
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;

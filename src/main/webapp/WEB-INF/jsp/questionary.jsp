@@ -28,7 +28,7 @@
 		  			<li>
 		  				<span class="circle">${status.index + 1}.</span>
 		  				<span class="question">${question.questionText}</span>
-		  			<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
+		  				<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
 						<ul class="clearfix">
 				 			<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
 								<li class="fleft">

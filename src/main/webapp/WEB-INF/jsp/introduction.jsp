@@ -15,37 +15,37 @@
 	<div class="header-logo"></div>
 		<div class="text-wrap text-center bubble-holder">
 			<h1 class="entry-title">Uvod</h1>
-			<img 
-				class="img-responsive" 
-				src="/pazisex/resources/css/images/marija_stefan.png"
-				alt="marija i stefan"
-				style="margin-top: 80px;" />
-		
-	
-	
-		<div id='div1' style="display:none;" class="left"> 
-		  	<span>Cao, ja sam Marija!</span>
-		</div>
-		
-		<div id='div2' style="display:none;" class="right"> 
-			<span>Cao, ja sam Stefan!</span>
-		</div>
-		
-		<div id='div3' style="display:none;" class="left"> 
-			<span>Juce smo se posvadjali jer sam ja rekla da hocu da poravljam bajs.</span>
-		</div>
-		
-		<div id='div4' style="display:none;" class="right"> 
-		<span>... Ali muskarci su urodjeno bolji u nekim stvarima</span>
-		</div>
-		
-		<div id='div5' style="display:none;" class="left"> 
-			<span>Ne u ovome! slazem se da postoje neke razlike, na primer ne moze muskarac da bude X</span>
-		</div>
-		
-		<div id='div6' style="display:none;" class="right"> 
-			<span>Sto ne moze?</span>
-		</div>
+			<div>
+				<img 
+					class="img-responsive" 
+					src="/pazisex/resources/css/images/marija_stefan.png"
+					alt="marija i stefan"
+					style="margin-top: 80px; margin: 0 auto;" />
+					
+				<div id='div1' style="display:none;" class="left"> 
+				  	<span>Cao, ja sam Marija!</span>
+				</div>
+				
+				<div id='div2' style="display:none;" class="right"> 
+					<span>Cao, ja sam Stefan!</span>
+				</div>
+				
+				<div id='div3' style="display:none;" class="left"> 
+					<span>Juce smo se posvadjali jer sam ja rekla da hocu da poravljam bajs.</span>
+				</div>
+				
+				<div id='div4' style="display:none;" class="right"> 
+				<span>... Ali muskarci su urodjeno bolji u nekim stvarima</span>
+				</div>
+				
+				<div id='div5' style="display:none;" class="left"> 
+					<span>Ne u ovome! slazem se da postoje neke razlike, na primer ne moze muskarac da bude X</span>
+				</div>
+				
+				<div id='div6' style="display:none;" class="right"> 
+					<span>Sto ne moze?</span>
+				</div>
+			</div>
 	</div>
 </div>
 <aside class="right"></aside>
