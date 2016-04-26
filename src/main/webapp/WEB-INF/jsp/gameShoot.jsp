@@ -55,7 +55,7 @@
 			<br/>
 			
 <br>
-		<a href="/pazisex/game/getGame/99">Nastavi</a>
+		<a href="/pazisex/game/getGame/99" style="display: block; margin: 0 auto 80px auto; text-align-center;">Nastavi</a>
      
 		</form:form>
 	</div>
