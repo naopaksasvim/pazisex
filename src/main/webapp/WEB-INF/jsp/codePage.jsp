@@ -14,8 +14,8 @@
 	<h1 class="entry-title">Za nastavak unesite kod</h1>
 	<form:form method="post" action="/pazisex/game/enterCode" modelAttribute="game">
 		<ul class="input-fields">
-			<input type="hidden" name="gameID" value="${game.gameID}"/>
-			<li><label>Kod:</label></li>
+		<li><input type="hidden" name="gameID" value="${game.gameID}"/>
+			<label>Kod:</label></li>
 			<li><input type="text" name="gameName"  value=""/></li>
 			<li><input type="submit" value="Nastavi" /></li>
 		</ul>
