@@ -15,12 +15,12 @@
 	<div class="header-logo"></div>
 		<div class="text-wrap text-center bubble-holder">
 			<h1 class="entry-title">Uvod</h1>
-			<div>
+			<div id="container">
 				<img 
 					class="img-responsive" 
 					src="/pazisex/resources/css/images/marija_stefan.png"
 					alt="marija i stefan"
-					style="margin-top: 80px; margin: 0 auto;" />
+					style="margin: 80px auto;" />
 					
 				<div id='div1' style="display:none;" class="left"> 
 				  	<span>Cao, ja sam Marija!</span>
