@@ -17,7 +17,7 @@
 <div class="content">
 	<div class="header-logo"></div>
 	<div class="text-wrap relative">
-		<h1 class="entry-title">${game.gameName}</h1>
+		<h1 class="entry-title long">${game.gameName}</h1>
 		<div id="time" class="absolute"></div>
 		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form">
 		  	<input type="hidden" name="gameID" value="${game.gameID}"/>
@@ -28,7 +28,7 @@
 		  			<li>
 		  				<span class="circle">${status.index + 1}.</span>
 		  				<span class="question">${question.questionText}</span>
-		  			<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
+		  				<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
 						<ul class="clearfix">
 				 			<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
 								<li class="fleft">

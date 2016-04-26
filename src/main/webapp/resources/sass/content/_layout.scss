@@ -37,14 +37,42 @@ aside{
     margin: 0 100px;
 }
 
+.input-fields{
+    max-width: 200px;
+    margin: 40px auto;
+    
+    li{
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        
+        label{
+            font-family: 'BMK', Arial, sans-serif;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+            color: black;
+        }
+        
+        input[type="text"],
+        input[type="date"]{
+            width: 100%;
+        }
+        
+        input[type="submit"]{
+            display: block;
+            margin: 40px auto;
+        }
+    }
+}
+
 .radio-form{
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     
     input[type="submit"]{
         display: block;
 
-        margin: 0 auto;
-        border-image-outset: 5px;
+        margin: 40px auto 40px auto;
     }
     
     color: black;
@@ -78,9 +106,19 @@ aside{
             >ul{
                 margin-top: 20px;
                 
+                &.small{
+                    width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
                 >li{
                     width: 33%;
                     text-align: center;
+                    
+                    &.half-width{
+                        width: 50%;
+                    }
                     
                     span{
                         width: auto;
@@ -120,11 +158,140 @@ aside{
     text-align: center;
     font-weight: bold;
     z-index: 10;
+    margin: 0 auto 20px auto;
     
     &.absolute{
-        position: absolute;
+        /*position: absolute;
         top: -35px;
-        right: 0;
+        right: 0;*/
+    }
+}
+
+.entry-title{
+    &.long{
+        word-break: break-word;
+        word-wrap: break-word;
+        display: block;
+        width: 72%;
+        line-height: 1.4;
+    }
+}
+
+.bubble-holder{
+    position: relative;
+    
+    >div{
+        width: 100%;
+        position: relative;
+        
+        >div{
+            position: absolute;
+            top: 40px;
+            width: 150px;
+            height: 150px;
+
+            span{
+                @include vertical-align(absolute);
+            }
+
+            &.left{
+                background: url('images/bubble-left.svg') no-repeat center;
+                left: 0;
+            }
+
+            &.right{
+                background: url('images/bubble-right.svg') no-repeat center;
+                right: 0;
+            }
+        }
+    }
+    
+    /*#1{
+        
+    }
+    
+    #2{
+        
+    }
+    
+    #3{
+        
+    }
+    
+    #4{
+        
+    }
+    
+    #5{
+        
+    }
+    
+    #6{
+        
+    }*/
+}
+
+.playing-area-holder{
+    position: relative;
+    
+    .score{
+        @include horizontal-align(absolute);
+        top: -30px;
+        width: 150px;
+        background-color: #a1c049;
+        border: 3px solid black;
+        padding: 10px;
+        z-index: 10;
+        text-align: center;
+        
+        label,
+        p{
+            color: black;
+            font-family: 'BMK';
+            display: block;
+        }
+        
+        label{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        p{
+            font-size: 20px;
+        }
+    }
+    
+    .playing-area{
+        width: 100%;
+        height: 350px;
+        display: block;
+        border: 3px solid black;
+        position: relative;
+        box-sizing: border-box;
+        
+        overflow: hidden;
+        
+        .word{
+            background-color: #f4d200;
+            font-size: 18px;
+            font-family: 'BMK';
+            position: relative;
+            //padding: 10px 20px;
+            color: black;
+            border: 3px solid black;
+        }
+    }
+}
+
+#questions{
+    margin: 40px 0;
+    
+    div{
+        float: left;
+        margin-right: 10px;
+        font-family: 'BMK';
+        font-size: 14px;
+        color: black;
     }
 }
     

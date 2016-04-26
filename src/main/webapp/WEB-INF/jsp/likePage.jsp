@@ -4,11 +4,24 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
     <title>Pazi sex</title>
 </head>
 <body>
- <div id="fb-root"></div>
+	<aside class="left"></aside>
+	<div class="content">
+		<div class="header-logo"></div>
+		<div class="text-wrap text-center">
+		<h1 class="entry-title">Podrzi nas na fejsu</h1>
+
+		<div class="fb-like" data-href="https://www.facebook.com/pazisex/" data-width="400px" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+			<a href="../game/introduction" style="margin-top: 40px; display: block;">Nastavi</a>
+		</div>
+		
+	</div>
+ 	<div id="fb-root"></div>
+ 	<aside class="right"></aside>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -17,13 +30,6 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div id="content">
-<h1 class="entry-title">Podrzi nas na fejsu</h1>
-
-<div class="fb-like" data-href="https://www.facebook.com/pazisex/" data-width="400px" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
-
-<a href="../game/introduction">Nastavi</a>
-</div>
 
 </body>
 </html>

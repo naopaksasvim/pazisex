@@ -9,28 +9,32 @@
     <title>Pazi sex</title>
 </head>
 <body>
+<aside class="left"></aside>
+<div class="content">
+	<div class="header-logo"></div>
+	<h1 class="entry-title">Ucesnik</h1>
+	<form:form method="post" action="../user/saveUser" modelAttribute="user">
  
-
-<div id="content">
-<h1 class="entry-title">Ucesnik</h1>
-<div id="time" class="entry-title"></div>
-<form:form method="post" action="../user/saveUser" modelAttribute="user">
- 
-  <ul>
-  <li>Ime <input type="text" name="name" value="${user.name}"/>  </li>
-  <li>Prezime <input type="text" name="lastName" value="${user.lastName}"/>  </li>
-  <li>Datum rodjenja <input type="date"  name="dateOfBirth" value="${user.dateOfBirth}"/>  </li>
-  <li>Grad <input type="text" name="city" value="${user.city}"/>  </li>
-  <li>E-mail <input type="text" name="eMail" value="${user.eMail}"/>  </li>
-  <li>Facebook <input type="text" name="facebook" value="${user.facebook}"/>  </li>
-  <li>Twitter <input type="text" name="twitterName" value="${user.twitterName}"/>  </li>
-  <li>Instagram <input type="text" name="instagramName" value="${user.instagramName}"/>  </li>
-  </ul>
-<br/>
-<input type="submit" value="Save" />
-     
-</form:form>
+ 	<ul class="input-fields">
+	  	<li>
+	  		<label>Ime</label>
+	  		<input type="text" name="name" value="${user.name}"/>
+  		</li>
+	  	<li>
+	  		<label>Prezime</label>
+	  		<input type="text" name="lastName" value="${user.lastName}"/>
+  		</li>
+		<li><label>Datum rodjenja</label><input type="date"  name="dateOfBirth" value="${user.dateOfBirth}"/>  </li>
+		<li><label>Grad</label><input type="text" name="city" value="${user.city}"/>  </li>
+		<li><label>E-mail</label><input type="text" name="eMail" value="${user.eMail}"/>  </li>
+		<li><label>Facebook</label><input type="text" name="facebook" value="${user.facebook}"/>  </li>
+		<li><label>Twitter</label><input type="text" name="twitterName" value="${user.twitterName}"/>  </li>
+		<li><label>Instagram</label><input type="text" name="instagramName" value="${user.instagramName}"/>  </li>
+		<li><input type="submit" value="Sacuvaj" /></li>
+  	</ul>
+	
+    </form:form>
 </div>
-
+<aside class="right"></aside>
 </body>
 </html>
