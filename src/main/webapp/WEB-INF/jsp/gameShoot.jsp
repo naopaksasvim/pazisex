@@ -24,17 +24,17 @@
 	<div class="text-wrap" style="position: relative;">
 		<h1 class="entry-title" style="margin-bottom: 80px;">${game.gameName}</h1>
 		<div id="time" class="entry-title" style="position: absolute; top: -20px; right: 5px;"></div>
-		<form:form method="post" action="" modelAttribute="game">
+		<form:form method="get" action="/pazisex/game/getGame/99" >
 			<input type="hidden" name="game.gameID" value="${game.gameID}"/>
 			<input type="hidden" name="game.durationMin" id="duration" value="${game.durationMin}"/>
 			<div class="playing-area-holder">
-			
+			<div id="end" style="display:none">Kraj</div>
 			</div> 
   			<div id="questions">
   			<c:forEach items="${game.questions}" var="question" varStatus="status">
   				<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
       			<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
-     			<div id="question[${statusAnswer.index }]">
+     			<div id="question${statusAnswer.index }" style="display:none">
 	     			<input type="hidden" id="answer${statusAnswer.index}.answerText" name="answer[${statusAnswer.index}].answerText" value="${answer.answerText}"/>
 	     			<input type="hidden" id="answer${statusAnswer.index}.isCorrect" name="answer[${statusAnswer.index}].isCorrect" value="${answer.isCorrect}"/>
 	   				<c:if test="${answer.isCorrect==true }">
@@ -53,8 +53,9 @@
   			</c:forEach>
   			</div>
 			<br/>
-			<input type="submit" value="Nastavi" style="display: block; margin-top: 40px; margin: 40px auto;" />
-
+			
+<br>
+		<a href="/pazisex/game/getGame/99">Nastavi</a>
      
 		</form:form>
 	</div>
@@ -135,6 +136,8 @@ $(function(){
     		 {
     		 score+=1;
     		 $score.eq(0).text(score);
+    		 $(hiddenInput).parent().show();
+    		//$('#question'+index).show();
     		 newWord();
     		 }
     	 
@@ -142,12 +145,17 @@ $(function(){
     
     
     
-        $('.word').text($(hiddenInput).val());
-        var myWord = $('.word').text();
-        index+=1;
+       
         if(index==divs.length)
         	{
-        	$('.word').stop();
+        	$('.word').stop().hide();
+        	$('#end').show();
+        	}
+        else
+        	{
+        	 $('.word').text($(hiddenInput).val());
+             var myWord = $('.word').text();
+             index+=1;
         	}
     }// end displayWord
 
@@ -160,8 +168,10 @@ $(function(){
         $('.word').remove();
         $('#data').val('');
         displayWord();
+     
+        var left=Math.floor((Math.random() * ($('.playing-area').width()-50)) + 5);
         $('.word').css({
-            'left': (Math.random() * $('.playing-area').width()) + 'px',
+            'left': left + 'px',
            
         });
         startFall();
@@ -175,7 +185,7 @@ $(function(){
 
         if (e.keyCode == 13) {
             if ($data.val() == $word.text()) {
-                $('#mySound')[0].play();
+               
                 score += 10;
                 $score.eq(1).text(score);
                 if (score == 100 || speed == 200 || speed == 300 || speed == 400) {

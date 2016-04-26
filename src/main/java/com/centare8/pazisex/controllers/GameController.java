@@ -56,6 +56,11 @@ public class GameController {
 			
 			return new ModelAndView("gameShoot","game", game);
 		}
+		if(id==99)
+		{
+			
+			return new ModelAndView("lastPage","dummy", "");
+		}
 		if(id==6)
 		{
 			return new ModelAndView("organs","game",game);
@@ -107,6 +112,9 @@ public class GameController {
     	 {
     		 if(game.getGameID()==2){
     			 return new ModelAndView("organsIntroduction","dummy","");
+    		 }
+    		 if(game.getGameID()==6){
+    			 return new ModelAndView("ppiIntroduction","dummy","");
     		 }
     		  return new ModelAndView("redirect:" + "/game/getGame/3");
     		// Game nextGame = gameService.getGame(3);
