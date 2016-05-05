@@ -240,7 +240,7 @@ aside{
 
         >div{
             position: absolute;
-            width: 100px;
+            width: 200px;
             bottom: calc(100% + 40px);
             bottom: -moz-calc(100% + 40px);
             bottom: -webkit-calc(100% + 40px);
@@ -406,8 +406,6 @@ aside{
 }
 
 .words-holder{
-
-
     >div{
         @extend .clearfix;
 
