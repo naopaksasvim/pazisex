@@ -326,11 +326,7 @@ input[type='radio'] {
     z-index: 3
 }
 
-input[type='checkbox']:checked ~ i.icon {
-    background: url("images/radio-checked.svg") repeat-x center
-}
-input[type='checkbox']:checked ~ i.icon.wrong {
-    background: url("images/radio-checked-wrong.svg") repeat-x center
+
 }
 input[type='radio']:checked ~ i.icon {
     background: url("images/radio-checked.svg") repeat-x center
@@ -785,15 +781,4 @@ aside.right {
         margin-bottom: 20px;
         text-align: center
     }
-}
-.question-word {
-    background-color: #f4d200;
-    font-size: 18px;
-    font-family: 'BMK';
-    position: relative;
-    padding: 20px;
-    color: black;
-    border: 3px solid black;
-    margin: 0 auto 20px auto;
-    text-align: center;
 }

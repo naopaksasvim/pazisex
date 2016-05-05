@@ -17,39 +17,37 @@
 		<div class="text-wrap text-center bubble-holder">
 			<h1 class="entry-title">Marija i Stevan</h1>
 			<div id="container">
-				<img 
-					class="img-responsive" 
-					src="/pazisex/resources/css/images/marija_stefan.png"
-					alt="marija i stefan"
-					style="margin: 80px auto;" />
-					
-				<div id='div1' style="display:none;" class="left"> 
-				  	<span>Ćao, ja sam Marija!</span>
-				</div>
-				
-				<div id='div2' style="display:none;" class="right"> 
-					<span>Ćao, ja sam Stevan! Mi idemo u isto odeljenje.</span>
-				</div>
-				
-				<div id='div3' style="display:none;" class="left"> 
-					<span>Juče smo se posvadjali jer sam ja rekla da hoću da igram fudbal sa dečacima jer sam otkrila da sam dobra u tome i da mi se sviđa. </span>
-				</div>
-				
-				<div id='div4' style="display:none;" class="right"> 
-				<span>….ali ti si žensko, ne ide to uz devojke. </span>
-				</div>
-				
-				<div id='div5' style="display:none;" class="left"> 
-					<span>Kakve ima veze, što si tako zatvorenog uma?! Pa sigurno i ti voliš nešto netipično…</span>
-				</div>
-				
-				<div id='div6' style="display:none;" class="right"> 
-					<span> Pa dobro da, volim da vezem….</span>
-				</div>
-				
-				<div id='div7' style="display:none;" class="left"> 
-					<span>  Kakvo si ti muško što voliš da vezeš?!</span>
-				</div>
+				<section class="char-img-holder">
+					<article class="char">
+						<img src="/pazisex/resources/css/images/marija.svg"
+							class="img-responsive" style="margin: 0 auto; max-width: 80%;"/>
+						<div id='div1' style="display:none;" class="left"> 
+						  	<span>Ćao, ja sam Marija!</span>
+						</div>
+						<div id='div3' style="display:none;" class="left"> 
+							<span>Juče smo se posvadjali jer sam ja rekla da hoću da igram fudbal sa dečacima jer sam otkrila da sam dobra u tome i da mi se sviđa. </span>
+						</div>
+						<div id='div5' style="display:none;" class="left"> 
+							<span>Kakve ima veze, što si tako zatvorenog uma?! Pa sigurno i ti voliš nešto netipično…</span>
+						</div>
+						<div id='div7' style="display:none;" class="left"> 
+							<span>  Kakvo si ti muško što voliš da vezeš?!</span>
+						</div>
+					</article>
+					<article class="char">
+						<img src="/pazisex/resources/css/images/stefan.svg"
+							class="img-responsive" style="margin: 0 auto" />
+						<div id='div2' style="display:none;" class="right"> 
+							<span>Ćao, ja sam Stevan! Mi idemo u isto odeljenje.</span>
+						</div>
+						<div id='div4' style="display:none;" class="right"> 
+							<span>….ali ti si žensko, ne ide to uz devojke. </span>
+						</div>
+						<div id='div6' style="display:none;" class="right"> 
+							<span> Pa dobro da, volim da vezem….</span>
+						</div>
+					</article>
+				</section>
 			</div>
 	</div>
 </div>
