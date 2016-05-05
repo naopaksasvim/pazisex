@@ -22,7 +22,7 @@
 					class="img-responsive" 
 					src="/pazisex/resources/css/images/marija_stefan.png"
 					alt="marija i stefan"
-					style="margin: 160px auto;" />
+					style="margin: 180px auto;" />
 					
 				<div id='div1' style="display:none;" class="bubble-center left"> 
 				  	<span>Ne znam da li smo spremni za seks? Da li je opasno?</span>

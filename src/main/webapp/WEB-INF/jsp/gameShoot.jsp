@@ -30,7 +30,7 @@
 			<div class="playing-area-holder">
 			<div id="end" style="display:none">Kraj</div>
 			</div> 
-  			<div id="questions" style="line-height: 2; padding-bottom: 30px;">
+  			<div class="clearfix" id="questions" style="line-height: 2; padding-bottom: 30px;">
   			<c:forEach items="${game.questions}" var="question" varStatus="status">
   				<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
       			<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">

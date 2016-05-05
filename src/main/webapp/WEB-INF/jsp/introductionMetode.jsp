@@ -18,20 +18,26 @@
 		<div class="text-wrap text-center bubble-holder">
 			<h1 class="entry-title" style="margin-bottom:200px">Marija i Stevan sve intenzivnije razmišljaju o tome da imaju seks po prvi put… i pitaju se:</h1>
 			<div id="container">
-				<img 
-					class="img-responsive" 
-					src="/pazisex/resources/css/images/marija_stefan.png"
-					alt="marija i stefan"
-					style="margin: 80px auto;" />
+			<section class="char-img-holder">
+				<article class="char">
+					<img src="/pazisex/resources/css/images/marija.svg"
+							class="img-responsive" style="margin: 0 auto; max-width: 80%;"/>
+					<div id='div1' style="display:none;" class="left"> 
+					  	<span>Znam da smo spremni i da želim seks, ali nisam spreman da budem otac.</span>
+					</div>
+				</article>
+				<article class="char">
+					<img src="/pazisex/resources/css/images/stefan.svg"
+							class="img-responsive" style="margin: 0 auto" />
+					<div id='div2' style="display:none;" class="right"> 
+						<span> Slažem se, ali za sprečavanje trudnoće postoje razne prirodne metode, mene više brinu bolesti …  </span>
+					</div>
+				</article>
 					
-				<div id='div1' style="display:none;" class="right"> 
-				  	<span>Znam da smo spremni i da želim seks, ali nisam spreman da budem otac.</span>
-				</div>
 				
-				<div id='div2' style="display:none;" class="left"> 
-					<span> Slažem se, ali za sprečavanje trudnoće postoje razne prirodne metode, mene više brinu bolesti …  </span>
-				</div>
 				
+				
+			</section>
 				
 			</div>
 	</div>

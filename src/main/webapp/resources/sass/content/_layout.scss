@@ -191,7 +191,7 @@ aside{
     display: block;
     font-family: 'BMK', Arial, sans-serif;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 82px;
     text-align: center;
     font-weight: bold;
@@ -240,7 +240,7 @@ aside{
 
         >div{
             position: absolute;
-            width: 100px;
+            width: 200px;
             bottom: calc(100% + 40px);
             bottom: -moz-calc(100% + 40px);
             bottom: -webkit-calc(100% + 40px);
@@ -274,7 +274,7 @@ aside{
             }
 
             &.right{
-                left: -30px;
+                right: -10px;
 
                 &:after{
                     bottom: -30px;
@@ -401,13 +401,16 @@ aside{
             padding: 20px;
             color: black;
             border: 3px solid black;
+
+            @include respond-to('xsmall'){
+                padding: 10px;
+                font-size: 16px;
+            }
         }
     }
 }
 
 .words-holder{
-
-
     >div{
         @extend .clearfix;
 
