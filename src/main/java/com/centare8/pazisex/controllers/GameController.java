@@ -144,7 +144,9 @@ public class GameController {
 		}
 		if(game.getGameID()==4)
 		{Game nextGame = gameService.getGame(5);
+		userResultService.save(resultsToSave);
 		return new ModelAndView("questionary","game",nextGame);
+		
 		}
 		
 		userResultService.save(resultsToSave);
