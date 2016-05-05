@@ -470,42 +470,40 @@ jsPlumb.connect({ source: e0, target: e1 });
 <aside class="left"></aside>
 
 
-<div class="content">
+<div class="content words-holder">
 	<div class="header-logo"></div>
-	
 		<h1 class="entry-title">${game.gameName}</h1>
 		<div id="time" class="absolute"></div>
-	
-    <div>
-    <ul  style="float:left">
-    <li><div id="sekret" class="question-word js_drag js_simpt1">Sekret</div></li>
-    <li><div id="bolOdnos" class="question-word js_drag js_simpt2">Bol pri odnosu</div></li>
-    <li><div id="bezSimpt" class="question-word js_drag js_simpt3">Bez vidljivih simptoma</div></li>
-    <li><div id="svrab" class="question-word js_drag js_simpt4">Svarab</div></li>
-    <li><div id="peckanje" class="question-word js_drag js_simpt5">Peckanje</div></li>
-    <li><div id="temperatura" class="question-word js_drag js_simpt6">Temperatura</div></li>
-    <li><div id="iscrpljenost" class="question-word js_drag js_simpt7">Iscrpljenost</div></li>
+    <div class="clearfix">
+    <ul class="words-left">
+    	<li><div id="sekret" class="question-word js_drag js_simpt1">Sekret</div></li>
+    	<li><div id="bolOdnos" class="question-word js_drag js_simpt2">Bol pri odnosu</div></li>
+    	<li><div id="bezSimpt" class="question-word js_drag js_simpt3">Bez vidljivih simptoma</div></li>
+    	<li><div id="svrab" class="question-word js_drag js_simpt4">Svarab</div></li>
+    	<li><div id="peckanje" class="question-word js_drag js_simpt5">Peckanje</div></li>
+    	<li><div id="temperatura" class="question-word js_drag js_simpt6">Temperatura</div></li>
+    	<li><div id="iscrpljenost" class="question-word js_drag js_simpt7">Iscrpljenost</div></li>
+	</ul>
+     
+    <ul class="words-right">
+    	<li><div class="question-word" id="bolest1">Gonoreja</div></li>
+    	<li><div class="question-word" id="bolest2">Trihomonijaza</div></li>
+    	<li><div class="question-word " id="bolest3">Ureaplazma </div></li>
+    	<li><div class="question-word" id="bolest4">Mikoplazma </div></li>
+    	<li><div class="question-word" id="bolest5">Kandida </div></li>
+    	<li><div class="question-word" id="bolest6">Sifilis </div></li>
+    	<li><div class="question-word" id="bolest7">Hlamidija </div></li>
+    	<li><div class="question-word" id="bolest8">Genitalni herpes </div></li>
+    	<li><div class="question-word" id="bolest9">HPV </div></li>
+    	<li><div class="question-word" id="bolest10">HIV/AIDS </div></li>
+    	<li><div class="question-word" id="bolest11">Hepatitis B i C </div></li>
+     	<li><div class="question-word" id="bolest13">Stidne vaši </div></li>
+    	<li><div class="question-word" id="bolest14">Herpes </div></li>
      </ul>
      
-       <ul  style="float:right">
-    <li><div class="question-word" id="bolest1">Gonoreja</div></li>
-    <li><div class="question-word" id="bolest2">Trihomonijaza</div></li>
-    <li><div class="question-word " id="bolest3">Ureaplazma </div></li>
-    <li><div class="question-word" id="bolest4">Mikoplazma </div></li>
-    <li><div class="question-word" id="bolest5">Kandida </div></li>
-    <li><div class="question-word" id="bolest6">Sifilis </div></li>
-    <li><div class="question-word" id="bolest7">Hlamidija </div></li>
-    <li><div class="question-word" id="bolest8">Genitalni herpes </div></li>
-    <li><div class="question-word" id="bolest9">HPV </div></li>
-    <li><div class="question-word" id="bolest10">HIV/AIDS </div></li>
-    <li><div class="question-word" id="bolest11">Hepatitis B i C </div></li>
-     <li><div class="question-word" id="bolest13">Stidne vaši </div></li>
-    <li><div class="question-word" id="bolest14">Herpes </div></li>
-    
-     </ul>
       </div>
-      <div style="clear: both;">
-   <a href="/pazisex/game/getGame/56">Nastavi</a></div>
+
+   <a href="/pazisex/game/getGame/56" style="display: block; margin: 100px auto; text-align: center;">Nastavi</a>
 	
 <aside class="right"></aside>
 </div>

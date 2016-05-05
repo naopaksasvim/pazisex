@@ -405,6 +405,54 @@ aside{
     }
 }
 
+.words-holder{
+
+
+    >div{
+        @extend .clearfix;
+
+        >ul{
+            width: 200px;
+
+            @include respond-to('small'){
+                width: 40%;
+
+                li{
+                    div{
+                        padding: 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            @include respond-to('xsmall'){
+                width: 40%;
+
+                li{
+                    div{
+                        padding: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            >li{
+                .question-word{
+
+                }
+            }
+        }
+    }
+
+    .words-left{
+        float: left;
+    }
+
+    .words-right{
+        float: right;
+    }
+}
+
 #questions{
     margin: 40px 0;
 
