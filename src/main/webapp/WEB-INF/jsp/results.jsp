@@ -29,19 +29,13 @@
 	
 	<form:form method="post" action="/pazisex/game/save" modelAttribute="result" class="radio-form">	  	
 		  
-		  	<table id="resultTable">
+		  	<table class="table">
 		  		<c:forEach items="${results}" var="result" varStatus="status">
-		  			<tr>
-		  			<td>
-		  			${result.questionText}	 
-	</td>
-		   			
-		   			<td>
-		  			${result.answerText}	 
-	
-		   			</td>
-		   				<td>${result.numberOfAnswers}</td>
-		   				</tr>
+	  			<tr>
+		  			<td><span>${result.questionText}</span></td>
+		   			<td><span>${result.answerText}</span></td>
+	   				<td><span>${result.numberOfAnswers}</span></td>
+   				</tr>
 				</c:forEach>
 			</table>
 			</form:form>
@@ -51,28 +45,7 @@
 </div>
 <aside class="right"></aside>
 <script>
-$(function () {
 
-    var table = document.getElementById("resultTable");
-    var j = 0;
-    var index = [];
-    for (var i = 0; i < table.rows.length - 1; i++) {
-
-        if (table.rows[i] != null && table.rows[i + 1] != null) {
-
-            if (table.rows[i].cells[0].textContent == table.rows[i + 1].cells[0].textContent) {
-                index[index.length] = i + 1;
-            }
-
-
-        }
-
-    }
-    for (var child = 0; child < index.length; child++) {
-        table.rows[index[child]].cells[0].textContent = "";
-
-    }
-});
 </script>
 </body>
 </html>

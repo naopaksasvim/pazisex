@@ -503,3 +503,20 @@ aside{
     margin: 0 auto 20px auto;
     text-align: center;
 }
+
+.table{
+    border-collapse: separate;
+    border-spacing: 10px;
+
+    th,
+    td{
+        border: 1px solid black;
+        font-size: 14px;
+        color: black;
+
+        >span{
+            padding: 5px;
+            display: block;
+        }
+    }
+}
