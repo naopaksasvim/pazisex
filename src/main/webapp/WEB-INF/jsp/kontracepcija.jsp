@@ -23,7 +23,7 @@
 <div class="content">
 	<div class="header-logo"></div>
 	<div class="text-wrap text-center bubble-holder">
-	<h1 class="entry-title">${game.gameName}</h1>
+	<h1 class="entry-title">Označi koje su to “prirodne metode”</h1>
 	<div id="time"></div>
 		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form">
 			<input type="hidden" name="gameID" value="${game.gameID}"/>
@@ -31,16 +31,14 @@
 				<ul>
 					<c:forEach items="${game.questions}" var="question" varStatus="status">
 					<li>
-						<span class="circle">${status.index + 1}.</span>
-						<span>${question.questionText}</span>
 						
 						<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
 						
-						<ul class="clearfix small">
+						<ul class="clearfix ">
 							<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
 								<li class="fleft half-width">
 									<span class="mask-radio">
-							 			<input type="radio" name="questions[${status.index}].usersAnswer" onclick="markincorrect(this,${answer.isCorrect})" value="${answer.answerID}">
+							 			<input type="checkbox" name="questions[${status.index}].usersAnswer" onclick="markincorrect(this,${answer.isCorrect})" value="${answer.answerID}">
 							 			<label>${answer.answerText}</label>
 										<i class="icon"></i>
 							 		</span>

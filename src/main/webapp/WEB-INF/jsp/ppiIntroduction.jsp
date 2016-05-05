@@ -24,13 +24,10 @@
 	<div class="text-wrap text-center">
 		<h1 class="entry-title">PPI</h1>
 		<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+				U najboljem slučaju, tela su nam zdrava, ali u nekim slučajevima nisu… Klikni na bolesti i infekcije koje se smatraju polno prenosivim, odnosno koja se mogu preneti putem seksualnog odnosa (*računaju se one koje i pored seksualnog puta, mogu se preneti i na druge načine).Svaki pogodak donosi jedan poen, netačan odgovor smanjuje poene za jedan. 
 		</p>
 		<br>
-		<a href="../game/getGame/3">Nastavi</a>
+		<a href="/pazisex/game/getGame/3">Nastavi</a>
 	</div>
 </div>
 <aside class="right"></aside>

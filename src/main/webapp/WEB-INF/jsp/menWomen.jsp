@@ -26,8 +26,7 @@
 		  	<ul id="organs">
 		  		<c:forEach items="${game.questions}" var="question" varStatus="status">
 		  			<li id="quest${status.index}" style="display:none">
-		  			<img src="/pazisex/resources/css/images/organs/${question.questionText}.png"
-		  			style="display: block; margin: 0 auto;"/>
+		  			<span class="question-word" style="display: block; margin: 0 auto;">${question.questionText}</span>
 		  			
 		  				
 		  			<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
@@ -75,23 +74,30 @@ function enable(element,e)
 {
 if(e==true)
 	{
-	$('#quest'+i).hide();
-	if($('#organs ul').length==i+1)
-		{
-		$('form').submit();
-		}
-	i+=1;
-	$('#quest'+i).show();
+	
+	submitAnswer()
 	
 	}
 else
 	{
 	$(element).parent().find('i').addClass( "wrong" );
+	
+	setTimeout(function(){submitAnswer();},1000)
 	}
 
 	
 	}
-	
+	function submitAnswer()
+	{
+		$('#quest'+i).hide();
+		if($('#organs ul').length==i+1)
+		{
+		$('form').submit();
+		}
+	i+=1;
+	$('#quest'+i).show();
+		
+	}
 jQuery(function ($) {
 	$('#quest0').show();
 	minutes=$("#duration").val();

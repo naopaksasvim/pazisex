@@ -30,7 +30,7 @@
 			<div class="playing-area-holder">
 			<div id="end" style="display:none">Kraj</div>
 			</div> 
-  			<div id="questions">
+  			<div id="questions" style="line-height: 2; padding-bottom: 30px;">
   			<c:forEach items="${game.questions}" var="question" varStatus="status">
   				<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
       			<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
@@ -55,7 +55,8 @@
 			<br/>
 			
 <br>
-		<a href="/pazisex/game/getGame/99" style="display: block; margin: 0 auto 80px auto; text-align-center;">Nastavi</a>
+
+		<a href="/pazisex/game/getGame/54" style="display: block; margin: 0 auto 80px auto; text-align-center;">Nastavi</a>
      
 		</form:form>
 	</div>
@@ -75,7 +76,7 @@ function startTimer(duration, display) {
         display.text(minutes + ":" + seconds);
 
         if (--timer < 0) {
-            timer = duration;
+        	 $('form').submit();
         }
     }, 1000);
 }

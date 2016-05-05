@@ -22,12 +22,20 @@
 <div class="content">
 	<div class="header-logo"></div>
 	<div class="text-wrap text-center">
-		<h1 class="entry-title">KRAJ</h1>
-	
-		<p>Hvala  ti što si prošao/la ovaj put sa nama, nadamo se da si nešto naučio/la,  i šta god da odlučiš u vezi sa svojim seksualnim životom, da to bude bez pritisaka i da ta odluka bude odraz tvoje zrelosti da odrediš šta je najbolje za tebe; ako se odlučiš za stupanje u seksualne odnose, da se to desi kada budeš i psihički i fizički spreman/na za to, na bezbedan način koji će očuvati tvoje zdralje. Takođe želimo da ti kažemo da je  u redu ako ne želiš  seks ili osećaš da sad nisi spreman/na. Seks bez potpune spremnosti nema smisla i može biti loš po tebe. Važno je zapamtiti da je za sve nas najbolje da gradimo društvo u kojem smo informisani, poštujemo i međusobno podržavamo jedni druge i odluke koje donosimo.  
- <br><br>
-Ako imaš još pitanja, idi na stranicu  <a href="http://www.pazisex.net">www.pazisex.net</a> <br><br> i dodatno se informiši ukoliko postoji bilo koja nedoumica! </p>
-	
+		<h1 class="entry-title">Polno prenosive bolesti</h1>
+		<p>
+		Dakle, mnoge polno prenosive infekcije ne pokazuju nikakve simptome, ili imaju slične ili nedefinisane simptome, zbog toga je važno da ako si imao/la nezaštićeni seksualni odnos ili/i ako primetiš bilo kakve simptome, da odeš da se testiraš. Kao što smo rekli, ne možemo golim okom da utvrdimo o kojoj polno prenosivoj infekciji se radi, a čak i kada bismo mogli, ne bismo mogli da znamo koji lek deluje baš na ono što mi imamo- moguće je da dvema osobama sa istom infekcijom su potrebni različiti lekovi, znači važno je da da se ne lečiš sam/a jer je svako telo drugačije kao i svaka infekcija! Ali još bolje od toga je da se pre svega toga…  ZAŠTITIŠ! 
+		 </p>
+		 <br/>
+		<p>
+
+		</p>
+		<p>
+		 <br/>
+		
+		</p>
+		<br>
+		<a href="/pazisex/game/getGame/57">Nastavi</a>
 	</div>
 </div>
 <aside class="right"></aside>

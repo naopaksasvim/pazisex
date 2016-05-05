@@ -15,7 +15,7 @@
 <div class="content">
 	<div class="header-logo"></div>
 		<div class="text-wrap text-center bubble-holder">
-			<h1 class="entry-title">Marija i Stevan</h1>
+			<h1 class="entry-title" style="margin-bottom:200px">Marija i Stevan sve intenzivnije razmišljaju o tome da imaju seks po prvi put… i pitaju se:</h1>
 			<div id="container">
 				<img 
 					class="img-responsive" 
@@ -23,33 +23,15 @@
 					alt="marija i stefan"
 					style="margin: 80px auto;" />
 					
-				<div id='div1' style="display:none;" class="left"> 
-				  	<span>Ćao, ja sam Marija!</span>
+				<div id='div1' style="display:none;" class="right"> 
+				  	<span>Znam da smo spremni i da želim seks, ali nisam spreman da budem otac.</span>
 				</div>
 				
-				<div id='div2' style="display:none;" class="right"> 
-					<span>Ćao, ja sam Stevan! Mi idemo u isto odeljenje.</span>
+				<div id='div2' style="display:none;" class="left"> 
+					<span> Slažem se, ali za sprečavanje trudnoće postoje razne prirodne metode, mene više brinu bolesti …  </span>
 				</div>
 				
-				<div id='div3' style="display:none;" class="left"> 
-					<span>Juče smo se posvadjali jer sam ja rekla da hoću da igram fudbal sa dečacima jer sam otkrila da sam dobra u tome i da mi se sviđa. </span>
-				</div>
 				
-				<div id='div4' style="display:none;" class="right"> 
-				<span>….ali ti si žensko, ne ide to uz devojke. </span>
-				</div>
-				
-				<div id='div5' style="display:none;" class="left"> 
-					<span>Kakve ima veze, što si tako zatvorenog uma?! Pa sigurno i ti voliš nešto netipično…</span>
-				</div>
-				
-				<div id='div6' style="display:none;" class="right"> 
-					<span> Pa dobro da, volim da vezem….</span>
-				</div>
-				
-				<div id='div7' style="display:none;" class="left"> 
-					<span>  Kakvo si ti muško što voliš da vezeš?!</span>
-				</div>
 			</div>
 	</div>
 </div>
@@ -66,43 +48,24 @@ showDiv();
 	    if (counter ==0) { counter++;  }
 		if(counter==1)
 			{
-			time=2000;
+			time=4000;
 			}
 		else if(counter==2)
 			{
-			time=3000;
+			time=4000;
 			}
-		else if(counter==3)
-		{
-		time=4000;
-		}
-		else if(counter==4)
-		{
-		time=2000;
-		}
-		else if(counter==5)
-		{
-		time=4000;
-		}
-		else if(counter==6)
-		{
-		time=2000;
-		}
-		else if(counter==7)
-		{
-		time=2000;
-		}
+		
 			
-	    if(counter==7)
+	    if(counter==2)
 	    	{
-	    	window.location = "/pazisex/game/getGame/6"
+	    	window.location = "/pazisex/game/getGame/8"
 	    	}
 	    $('div','#container')
 	      .stop()
 	      .hide()
 	      .filter( function() { return this.id.match('div' + counter); })   
 	      .show('fast');
-	    counter == 7? counter = -1: counter++; 
+	    counter == 2? counter = -1: counter++; 
 	    if(counter!=-1)
 	    	{
 	    	setTimeout(function(){showDiv()}, time)

@@ -15,7 +15,7 @@
 <div class="content">
 	<div class="header-logo"></div>
 		<div class="text-wrap text-center bubble-holder">
-			<h1 class="entry-title">Marija i Stevan</h1>
+			<h1 class="entry-title" style="margin-bottom:200px">Marija i Stevan sve intenzivnije razmišljaju o tome da imaju seks po prvi put… i pitaju se:</h1>
 			<div id="container">
 				<img 
 					class="img-responsive" 
@@ -24,31 +24,31 @@
 					style="margin: 80px auto;" />
 					
 				<div id='div1' style="display:none;" class="left"> 
-				  	<span>Ćao, ja sam Marija!</span>
+				  	<span>Ne znam da li smo spremni za seks? Da li je opasno?</span>
 				</div>
 				
 				<div id='div2' style="display:none;" class="right"> 
-					<span>Ćao, ja sam Stevan! Mi idemo u isto odeljenje.</span>
+					<span> Kada je u pitanju seks, bitno je biti i psihički i fizički spreman/na! </span>
 				</div>
 				
 				<div id='div3' style="display:none;" class="left"> 
-					<span>Juče smo se posvadjali jer sam ja rekla da hoću da igram fudbal sa dečacima jer sam otkrila da sam dobra u tome i da mi se sviđa. </span>
+					<span> Psihička spremnost? Ja ga volim! </span>
 				</div>
 				
 				<div id='div4' style="display:none;" class="right"> 
-				<span>….ali ti si žensko, ne ide to uz devojke. </span>
+				<span>NE RADI SE SAMO O TOME! Ne radi se samo o tome kako se osećaš prema osobi sa kojom treba da imaš seks, već da li si spreman/na za tako veliku promenu i sve što ona može da nosi! </span>
 				</div>
 				
 				<div id='div5' style="display:none;" class="left"> 
-					<span>Kakve ima veze, što si tako zatvorenog uma?! Pa sigurno i ti voliš nešto netipično…</span>
+					<span>Fizički aspekt - što fizički, da li treba da ídem u teretanu?</span>
 				</div>
 				
 				<div id='div6' style="display:none;" class="right"> 
-					<span> Pa dobro da, volim da vezem….</span>
+					<span> Ne, već pored toga što treba da imaš dovoljno godina, treba voditi računa između ostalog i o  NEŽELJENOJ TRUDNOĆI I POLNO PRENOSIVIM INFEKCIJAMA</span>
 				</div>
 				
 				<div id='div7' style="display:none;" class="left"> 
-					<span>  Kakvo si ti muško što voliš da vezeš?!</span>
+					<span>Šta je to?</span>
 				</div>
 			</div>
 	</div>
@@ -66,27 +66,27 @@ showDiv();
 	    if (counter ==0) { counter++;  }
 		if(counter==1)
 			{
-			time=2000;
+			time=4000;
 			}
 		else if(counter==2)
 			{
-			time=3000;
+			time=5000;
 			}
 		else if(counter==3)
 		{
-		time=4000;
+		time=3000;
 		}
 		else if(counter==4)
 		{
-		time=2000;
+		time=5000;
 		}
 		else if(counter==5)
 		{
-		time=4000;
+		time=3000;
 		}
 		else if(counter==6)
 		{
-		time=2000;
+		time=5000;
 		}
 		else if(counter==7)
 		{
@@ -95,7 +95,7 @@ showDiv();
 			
 	    if(counter==7)
 	    	{
-	    	window.location = "/pazisex/game/getGame/6"
+	    	window.location = "/pazisex/game/getGame/108"
 	    	}
 	    $('div','#container')
 	      .stop()

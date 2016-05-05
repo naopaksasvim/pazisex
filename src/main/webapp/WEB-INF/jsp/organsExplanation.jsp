@@ -23,10 +23,10 @@
 	<div class="text-wrap text-center">
 		<h1 class="entry-title">Organi</h1>
 		<p>
-			Marija i Stevan su u poslednje vreme bili zainteresovani baš za tu biologiju. Hajde da se fokusiramo na polne razlike i na muška i ženska tela- tačnije na ženske i muške seksualne i reproduktivne organe.
+			Svi primećujemo da su neke stvari u društvu više „ženske“ a neke „muške“ i smatramo da je to tako urođeno i normalno. Međutim, većina tih podela su rezultat onoga što su nas učili od malena i nisu uvek postojale. Nekada su muškarci nosili štikle, i danas u nekim krajevima sveta muškarci nose suknje, a žene do skoro nisu smele da nose pantalone! Ovo je samo banalan primer koji se tiče oblačenja, ali pokazuje koliko nam se lako menja osećaj u vezi sa onim šta je „normalno“. Ono što je označeno crvenim su razlike koje je formiralo društvo i zove se ROD, a zelenim su označene POLNE razlike, odnosno ono što se smo dobili rođenjem, tj. ono što pripada sferi biologije. 
 		</p>
 		<br>
-		<a href="../game/getGame/7">Nastavi</a>
+		<a href="../game/getGame/108">Nastavi</a>
 	</div>
 </div>
 <aside class="right"></aside>

@@ -23,7 +23,7 @@
 		<h1 class="entry-title">Podrzi nas na fejsu</h1>
 
 		<div class="fb-like" data-href="https://www.facebook.com/pazisex/" data-width="400px" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
-			<a href="../game/introduction" style="margin-top: 40px; display: block;">Nastavi</a>
+			<a href="/pazisex/game/introduction" style="margin-top: 40px; display: block;">Nastavi</a>
 		</div>
 		
 	</div>

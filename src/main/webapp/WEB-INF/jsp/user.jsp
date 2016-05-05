@@ -19,9 +19,12 @@
 <aside class="left"></aside>
 <div class="content">
 	<div class="header-logo"></div>
-	<h1 class="entry-title">Ucesnik</h1>
+	
 	<form:form method="post" action="../user/saveUser" modelAttribute="user">
- 
+<div class="text-wrap text-center">
+<h1 class="entry-title">Uloguj se</h1>
+ <p>Hvala! <br/> A sada da počnemo…. Ako želiš uloguj se….. ako ne želiš, nastavićemo sa radionicom kao i do sada.. </p>
+ 	</div>
  	<ul class="input-fields">
 	  	<li>
 	  		<label>Ime</label>
@@ -37,7 +40,7 @@
 		<li><label>Facebook</label><input type="text" name="facebook" value="${user.facebook}"/>  </li>
 		<li><label>Twitter</label><input type="text" name="twitterName" value="${user.twitterName}"/>  </li>
 		<li><label>Instagram</label><input type="text" name="instagramName" value="${user.instagramName}"/>  </li>
-		<li><input type="submit" value="Sacuvaj" /></li>
+		<li><input type="submit" value="Sacuvaj" /><input type="submit" value="Preskoči" /></li>
   	</ul>
 	
     </form:form>

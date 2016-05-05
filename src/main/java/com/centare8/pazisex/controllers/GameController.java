@@ -45,23 +45,52 @@ public class GameController {
 		System.out.println("");
 		int gameid=id;
 		Game game = gameService.getGame(gameid);
-		
-		
 		if(id==4)
 		{
 			return new ModelAndView("questionary","game",game);
 		}
-		if(id==3)
+		else if(id==6)
+		{
+			return new ModelAndView("menWomen","game",game);
+		}
+		else if(id==108)
+		{
+			return new ModelAndView("ppiIntroduction","dummy", "");
+		}
+		else if(id==3)
 		{
 			
 			return new ModelAndView("gameShoot","game", game);
 		}
-		if(id==99)
+		else if(id==54)
+		{
+			return new ModelAndView("matchGameIntroduction");
+		}
+		else if(id==55)
+		{
+			return new ModelAndView("matchWords");
+		}
+		else if(id==56)
+		{
+			return new ModelAndView("matchGameExplanation");
+		}
+		else if(id==57)
+		{
+			return new ModelAndView("introductionMetode");
+		}
+		else if(id==8){
+			
+			return new ModelAndView("kontracepcija","game",game);
+		}
+		
+		else if(id==99)
 		{
 			
 			return new ModelAndView("lastPage","dummy", "");
 		}
-		if(id==6)
+		
+		
+		else if(id==7)
 		{
 			return new ModelAndView("organs","game",game);
 		}
@@ -75,10 +104,25 @@ public class GameController {
     public ModelAndView save(@ModelAttribute("game") Game game) {
        
         List<UserResultEntity> resultsToSave=new ArrayList<UserResultEntity>();
-        if(game.getGameID()==2 || game.getGameID()==6)
+        if(game.getGameID()==2 )
 		{
 			return new ModelAndView("codePage","game",game);
 		}
+        else if(game.getGameID()==6)
+        {
+        	return new ModelAndView("menWomenExplanation","dummy","");
+        	
+        }
+        else if(game.getGameID()==7)
+        {
+        	return new ModelAndView("codePage","game",game);
+        	
+        }
+        else if(game.getGameID()==8)
+        {
+        	return new ModelAndView("kontracepcijaExplanation","dummy","");
+        	
+        }
 		for (Question question : game.getQuestions()) {
 		    UserResultEntity userResult=new UserResultEntity();
 		    userResult.setAnswerID(question.getUsersAnswer());
@@ -96,6 +140,7 @@ public class GameController {
 		userResultService.save(resultsToSave);
          User user=new User();
         return new ModelAndView("user","user",user);
+		
     }
 	@RequestMapping(value = "/enterCode", method = RequestMethod.POST)
     public ModelAndView enterCode(@ModelAttribute("game") Game game) {
@@ -110,12 +155,16 @@ public class GameController {
     	 Code code =codes.get(i);
     	 if(code.getCodeText().equals(game.getGameName()))
     	 {
+    		 if(game.getGameID()==7){
+    			 return new ModelAndView("introductionPPI","dummy","");
+    		 }
     		 if(game.getGameID()==2){
     			 return new ModelAndView("organsIntroduction","dummy","");
     		 }
     		 if(game.getGameID()==6){
-    			 return new ModelAndView("ppiIntroduction","dummy","");
+    			 return new ModelAndView("organsIntroduction","dummy","");
     		 }
+    		 
     		  return new ModelAndView("redirect:" + "/game/getGame/3");
     		// Game nextGame = gameService.getGame(3);
  			//return new ModelAndView("gameShoot","game", nextGame);

@@ -13,23 +13,23 @@ import javax.persistence.Table;
 public class UserEntity {
 	@Id 
 	@GeneratedValue
-	@Column(name = "userID", nullable = false)
+	@Column(name = "userID", nullable = true)
 	private int userID;
-	@Column(name = "name", nullable = false)
+	@Column(name = "name", nullable = true)
 	 private String name;
-	@Column(name = "lastName", nullable = false)
+	@Column(name = "lastName", nullable = true)
 	 private String lastName;
-	@Column(name = "city", nullable = false)
+	@Column(name = "city", nullable = true)
 	 private String city;
-	@Column(name = "dateOfBirth", nullable = false)
+	@Column(name = "dateOfBirth", nullable = true)
 	 private Date dateOfBirth;
-	@Column(name = "email", nullable = false)
+	@Column(name = "email", nullable = true)
 	 private String email;
-	@Column(name = "facebook", nullable = false)
+	@Column(name = "facebook", nullable = true)
 	 private String facebook;
-	@Column(name = "twitter", nullable = false)
+	@Column(name = "twitter", nullable = true)
 	 private String twitter;
-	@Column(name = "instagram", nullable = false)
+	@Column(name = "instagram", nullable = true)
 	 private String instagram;
 	
 	public int getUserID() {

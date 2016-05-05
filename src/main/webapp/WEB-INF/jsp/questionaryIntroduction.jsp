@@ -22,26 +22,24 @@
 <div class="content">
 	<div class="header-logo"></div>
 	<div class="text-wrap text-center">
-		<h1 class="entry-title">Pazi sex</h1>
-		<p>
-		Pre nego što počnemo, molim te da popuniš upitnik! Upitnik je potpuno anoniman, tako da se opusti
-		kada odgovaraš na pitanja, ne delimo ocene.
-		</p>
+		<h1 class="entry-title">Anketa</h1>
 		<p>
 		U prvom delu "Stavovi" nas zanima kako razmišljaš. Ne postje tačni i netačni odgovori, već samo kako
 		ti misliš da bi ovaj svet trebao da izgleda. Ne preksači pitanja, i na svako
 		pitanje se odluči za neku od ponudjenih opcija: slažem se, ne slažem se, ne znam.
 		 </p>
+		 <br/>
 		<p>
 		U drugom delu bismo voleli da vidimo šta mladi tvojih godina znaju
 		o muškom i ženskom telu, seksu, polno prenosivim infekcijama i kontracepciji.
 		Za svako pitanje odgovori sa tačno, netačno, ne znam.
 		</p>
 		<p>
+		 <br/>
 		U redu je da ne znaš sve odgovore, zbog toga smo mi tu!
 		</p>
 		<br>
-		<a href="../game/getGame/4">Nastavi</a>
+		<a href="/pazisex/game/getGame/4">Nastavi</a>
 	</div>
 </div>
 <aside class="right"></aside>
