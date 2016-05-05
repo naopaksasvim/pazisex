@@ -287,6 +287,44 @@ aside{
     }
 }
 
+#container{
+    >div.bubble-center{
+        position: absolute;
+        font-size: 14px;
+        color: black;
+        width: 200px;
+        bottom: 100%;
+        left: calc(50% - 100px);
+
+        &:after{
+            position: absolute;
+            content: '';
+            background: url('images/bubbles.svg') no-repeat center;
+            width: 30px;
+            height: 10px;
+            bottom: calc(100% + 20px);
+            bottom: -webkit-calc(100% + 20px);
+            bottom: -moz-calc(100% + 20px);
+        }
+
+        &.left{
+            &:after{
+                left: 0;
+                transform: rotate(70deg);
+                -webkit-transform: rotate(70deg);
+            }
+        }
+
+        &.right{
+            &:after{
+                right: 0;
+                transform: rotate(-70deg);
+                -webkit-transform: rotate(-70deg);
+            }
+        }
+    }
+}
+
 #end{
     @include vertical-align(absolute);
 

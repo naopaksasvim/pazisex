@@ -15,39 +15,39 @@
 <div class="content">
 	<div class="header-logo"></div>
 		<div class="text-wrap text-center bubble-holder">
-			<h1 class="entry-title" style="margin-bottom:200px">Marija i Stevan sve intenzivnije razmišljaju o tome da imaju seks po prvi put… i pitaju se:</h1>
+			<h1 class="entry-title">Marija i Stevan sve intenzivnije razmišljaju o tome da imaju seks po prvi put… i pitaju se:</h1>
 			<div id="container">
 				<img 
 					class="img-responsive" 
 					src="/pazisex/resources/css/images/marija_stefan.png"
 					alt="marija i stefan"
-					style="margin: 80px auto;" />
+					style="margin: 160px auto;" />
 					
-				<div id='div1' style="display:none;" class="left"> 
+				<div id='div1' style="display:none;" class="bubble-center left"> 
 				  	<span>Ne znam da li smo spremni za seks? Da li je opasno?</span>
 				</div>
 				
-				<div id='div2' style="display:none;" class="right"> 
+				<div id='div2' style="display:none;" class="bubble-center right"> 
 					<span> Kada je u pitanju seks, bitno je biti i psihički i fizički spreman/na! </span>
 				</div>
 				
-				<div id='div3' style="display:none;" class="left"> 
+				<div id='div3' style="display:none;" class="bubble-center left"> 
 					<span> Psihička spremnost? Ja ga volim! </span>
 				</div>
 				
-				<div id='div4' style="display:none;" class="right"> 
+				<div id='div4' style="display:none;" class="bubble-center right"> 
 				<span>NE RADI SE SAMO O TOME! Ne radi se samo o tome kako se osećaš prema osobi sa kojom treba da imaš seks, već da li si spreman/na za tako veliku promenu i sve što ona može da nosi! </span>
 				</div>
 				
-				<div id='div5' style="display:none;" class="left"> 
+				<div id='div5' style="display:none;" class="bubble-center left"> 
 					<span>Fizički aspekt - što fizički, da li treba da ídem u teretanu?</span>
 				</div>
 				
-				<div id='div6' style="display:none;" class="right"> 
+				<div id='div6' style="display:none;" class="bubble-center right"> 
 					<span> Ne, već pored toga što treba da imaš dovoljno godina, treba voditi računa između ostalog i o  NEŽELJENOJ TRUDNOĆI I POLNO PRENOSIVIM INFEKCIJAMA</span>
 				</div>
 				
-				<div id='div7' style="display:none;" class="left"> 
+				<div id='div7' style="display:none;" class="bubble-center left"> 
 					<span>Šta je to?</span>
 				</div>
 			</div>
@@ -60,7 +60,7 @@ $(function() {
     
 	 // var timer = setInterval( showDiv, 3000);
 
-	  var time=0;
+	 var time=0;
 showDiv();
 	  function showDiv() {
 	    if (counter ==0) { counter++;  }
