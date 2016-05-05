@@ -29,19 +29,13 @@
 	
 	<form:form method="post" action="/pazisex/game/save" modelAttribute="result" class="radio-form">	  	
 		  
-		  	<table>
+		  	<table class="table">
 		  		<c:forEach items="${results}" var="result" varStatus="status">
-		  			<tr>
-		  			<td>
-		  			${result.questionText}	 
-	</td>
-		   			
-		   			<td>
-		  			${result.answerText}	 
-	
-		   			</td>
-		   				<td>${result.numberOfAnswers}</litd
-		   				</tr>
+	  			<tr>
+		  			<td><span>${result.questionText}</span></td>
+		   			<td><span>${result.answerText}</span></td>
+	   				<td><span>${result.numberOfAnswers}</span></td>
+   				</tr>
 				</c:forEach>
 			</table>
 			</form:form>
