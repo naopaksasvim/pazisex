@@ -1,17 +1,20 @@
 package com.centare8.pazisex.model;
 
+import java.math.BigInteger;
+
 public class Result {
 private Integer questionID;
 private String gameName;
 private String answerText;
 private String questionText;
+private BigInteger numberOfAnswers;
 public String getQuestionText() {
 	return questionText;
 }
 public void setQuestionText(String questionText) {
 	this.questionText = questionText;
 }
-private Integer numberOfAnswers;
+
 public Integer getQuestionID() {
 	return questionID;
 }
@@ -30,10 +33,10 @@ public String getAnswerText() {
 public void setAnswerText(String answerText) {
 	this.answerText = answerText;
 }
-public Integer getNumberOfAnswers() {
+public BigInteger getNumberOfAnswers() {
 	return numberOfAnswers;
 }
-public void setNumberOfAnswers(Integer numberOfAnswers) {
+public void setNumberOfAnswers(BigInteger numberOfAnswers) {
 	this.numberOfAnswers = numberOfAnswers;
 }
 

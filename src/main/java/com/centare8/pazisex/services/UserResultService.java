@@ -3,7 +3,7 @@ package com.centare8.pazisex.services;
 import java.util.List;
 
 import com.centare8.pazisex.entities.UserResultEntity;
-import com.centare8.pazisex.model.Game;
+
 import com.centare8.pazisex.model.Result;
 
 public interface UserResultService {

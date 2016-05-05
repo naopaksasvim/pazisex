@@ -1,5 +1,6 @@
 package com.centare8.pazisex.services.impl;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.centare8.pazisex.entities.GameEntity;
+
 import com.centare8.pazisex.entities.UserResultEntity;
 import com.centare8.pazisex.model.Result;
 import com.centare8.pazisex.repositories.UserResultRepository;
@@ -34,8 +35,9 @@ public class DefaultUserResultService implements UserResultService{
 			Result resultEntity = new Result();
 			resultEntity.setQuestionID((Integer)resultSetItem[0]);
 			resultEntity.setGameName((String)resultSetItem[1]);
-			resultEntity.setQuestionText((String)resultSetItem[3]);
-			resultEntity.setNumberOfAnswers((Integer)resultSetItem[2]);
+			resultEntity.setQuestionText((String)resultSetItem[2]);
+			resultEntity.setAnswerText((String)resultSetItem[3]);
+			resultEntity.setNumberOfAnswers((BigInteger)resultSetItem[4]);
 			result.add(resultEntity);
 	
 		}
