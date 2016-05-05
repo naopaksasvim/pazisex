@@ -37,10 +37,10 @@
 						
 						<ul class="clearfix ">
 							<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
-								<li class="fleft half-width">
+								<li class="fleft half-width" style="margin-bottom: 30px;">
 									<span class="mask-radio">
-							 			<input type="checkbox" name="questions[${status.index}].usersAnswer" onclick="markincorrect(this,${answer.isCorrect})" value="${answer.answerID}">
-							 			<label>${answer.answerText}</label>
+							 			<input id="${statusAnswer.index}" type="checkbox" name="questions[${status.index}].usersAnswer" onclick="markincorrect(this,${answer.isCorrect})" value="${answer.answerID}">
+							 			<label for="${statusAnswer.index}">${answer.answerText}</label>
 										<i class="icon"></i>
 							 		</span>
 								</li>
