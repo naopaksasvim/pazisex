@@ -1,6 +1,6 @@
 input[type='checkbox'],
 input[type='radio']{
-	background: none; 
+	background: none;
 	opacity: 0;
 }
 
@@ -33,42 +33,25 @@ input[type='radio'] ~ i.icon{
 }
 
 input[type='checkbox'],
-input[type='radio']{ 
+input[type='radio']{
 	position: absolute;
 	z-index: 10;
 	margin: 0;
 }
 
 .mask-radio,
-.mask-checkbox{ 
+.mask-checkbox{
     position: relative;
 	z-index: 3;
 }
 
 /*Checkbox*/
 
-input[type='checkbox'] ~ i.icon{
-	background: url("../images/checkbox.png") no-repeat center left;
+input[type='checkbox']:checked ~ i.icon {
+    background: url("images/radio-checked.svg") repeat-x center
 }
-
-input[type='checkbox']:checked ~ i.icon{
-	background: url("../images/checkbox-active.png") no-repeat center left;
-}
-
-input[type='checkbox']:focus ~ i.icon{
-	background: url("../images/checkbox-focus.png") no-repeat center left;
-}
-
-input[type='checkbox']:checked:focus ~ i.icon{
-	background: url("../images/checkbox-checked-focus.png") no-repeat center left;
-}
-
-input[type='checkbox']:disabled ~ i.icon{
-	background: url("../images/checkbox-disabled.png") no-repeat center left;
-}
-
-input[type='checkbox']:checked:disabled ~ i.icon{
-	background: url("../images/checkbox-checked-disabled.png") no-repeat center left;
+input[type='checkbox']:checked ~ i.icon.wrong {
+    background: url("images/radio-checked-wrong.svg") repeat-x center
 }
 
 /*Radiobutton*/
@@ -90,7 +73,7 @@ input[type="submit"]{
     font-size: 16px;
     outline: 0;
     background-color: transparent;
-    
+
     border: 5px solid transparent;
     border-image: url('images/line.png') 10;
     border-image-outset: 5px;
@@ -109,7 +92,7 @@ input[type="date"]{
     border: none;
     height: 30px;
     padding: 0 10px;
-    
+
     &:focus{
         outline: none;
         background: url('images/input-focus.svg') no-repeat center;
@@ -122,4 +105,3 @@ input[type="date"]{
     line-height: 40px !important;
     border-radius: 20px !important;
 }
-

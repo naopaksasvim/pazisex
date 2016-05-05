@@ -30,11 +30,11 @@
 		  			
 		  				
 		  			<input type="hidden" name="questions[${status.index}].questionID" value="${question.questionID}"/>
-						<ul class="clearfix">
+						<ul class="clearfix" style="margin-top: 60px;">
 				 			<c:forEach items="${question.answers}" var="answer" varStatus="statusAnswer">
-								<li class="fleft">
-									<span class="mask-radio" >
-						 				<input type="radio" name="questions[${status.index}].usersAnswer" value="${answer.answerID}"  onclick="enable(this,${answer.isCorrect})">
+								<li class="fleft" style="width: 50%;">
+									<span class="mask-radio">
+						 				<input type="radio" name="questions[${status.index}].usersAnswer" value="${answer.answerID}"  onclick="enable(this,${answer.isCorrect})"/>
 						 			
 						 				<label>${answer.answerText}</label>
 						 				<i class="icon"></i>
