@@ -73,28 +73,28 @@ showDiv();
 			}
 		else if(counter==3)
 		{
-		time=4000;
+		time=6000;
 		}
 		else if(counter==4)
 		{
-		time=3000;
+		time=4000;
 		}
 		else if(counter==5)
 		{
-		time=4000;
+		time=6000;
 		}
 		else if(counter==6)
 		{
-		time=3000;
+		time=4000;
 		}
 		else if(counter==7)
 		{
-		time=3000;
+		time=4000;
 		}
 			
 	    if(counter==7)
 	    	{
-	    	window.location = "/pazisex/game/getGame/6"
+	    	window.location = "/pazisex/game/getGame/88"
 	    	}
 	    $('div','#container')
 	      .stop()

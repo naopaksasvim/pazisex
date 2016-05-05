@@ -62,6 +62,16 @@ public class GameController {
 			
 			return new ModelAndView("gameShoot","game", game);
 		}
+		else if(id==88)
+		{
+			
+			return new ModelAndView("menWomenIntroduction");
+		}
+		else if(id==77)
+		{
+			
+			return new ModelAndView("organsIntroduction");
+		}
 		else if(id==54)
 		{
 			return new ModelAndView("matchGameIntroduction");

@@ -67,31 +67,31 @@ showDiv();
 	    if (counter ==0) { counter++;  }
 		if(counter==1)
 			{
-			time=4000;
+			time=6000;
 			}
 		else if(counter==2)
 			{
-			time=5000;
+			time=7000;
 			}
 		else if(counter==3)
 		{
-		time=3000;
+		time=5000;
 		}
 		else if(counter==4)
 		{
-		time=5000;
+		time=7000;
 		}
 		else if(counter==5)
 		{
-		time=3000;
+		time=5000;
 		}
 		else if(counter==6)
 		{
-		time=5000;
+		time=7000;
 		}
 		else if(counter==7)
 		{
-		time=2000;
+		time=4000;
 		}
 			
 	    if(counter==7)
