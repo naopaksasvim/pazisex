@@ -24,9 +24,9 @@
 	<div class="text-wrap text-center">
 		<h1 class="entry-title">Anketa</h1>
 		<p>
-		U prvom delu "Stavovi" nas zanima kako razmišljaš. Ne postje tačni i netačni odgovori, već samo kako
-		ti misliš da bi ovaj svet trebao da izgleda. Ne preksači pitanja, i na svako
-		pitanje se odluči za neku od ponudjenih opcija: slažem se, ne slažem se, ne znam.
+		U prvom delu "Stavovi" nas zanima kako razmišljaš. Ne postoje tačni i netačni odgovori, već samo kako
+		ti misliš da bi ovaj svet trebalo da izgleda. Ne preksači pitanja, i za svako
+		pitanje se odluči za neku od ponuđenih opcija:<i> slažem se, ne slažem se, ne znam.</i>
 		 </p>
 		 <br/>
 		<p>

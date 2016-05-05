@@ -24,7 +24,7 @@
 	<div class="text-wrap text-center">
 		<h1 class="entry-title">Polno prenosive bolesti</h1>
 		<p>
-		Kada kada smo identifikovali najčešće polno prenosive infekcije, hade da vidimo kako da ih prepoznamo. Probaj da spojiš simptome sa polno prenosivom infekcijom. 
+		Kada smo identifikovali najčešće polno prenosive infekcije, hade da vidimo kako da ih prepoznamo. Probaj da spojiš simptome sa polno prenosivom infekcijom. 
 		 </p>
 		 <br/>
 		<p>

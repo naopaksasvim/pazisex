@@ -24,7 +24,9 @@
 	<div class="text-wrap text-center">
 		<h1 class="entry-title">PPI</h1>
 		<p>
-				U najboljem slučaju, tela su nam zdrava, ali u nekim slučajevima nisu… Klikni na bolesti i infekcije koje se smatraju polno prenosivim, odnosno koja se mogu preneti putem seksualnog odnosa (*računaju se one koje i pored seksualnog puta, mogu se preneti i na druge načine).Svaki pogodak donosi jedan poen, netačan odgovor smanjuje poene za jedan. 
+				U najboljem slučaju, tela su nam zdrava, ali u nekim slučajevima nisu… 
+				<br>
+				Klikni na bolesti i infekcije koje se smatraju polno prenosivim, odnosno koje se mogu preneti putem seksualnog odnosa (*računaju se one koje i pored seksualnog puta, mogu da se prenesu i na druge načine) 
 		</p>
 		<br>
 		<a href="/pazisex/game/getGame/3">Nastavi</a>

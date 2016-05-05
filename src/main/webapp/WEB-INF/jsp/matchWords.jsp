@@ -8,14 +8,15 @@
 	<link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="<c:url value="/resources/js/main.js" />"></script>
-	 <script src="//code.jquery.com/jquery-1.8.3.js"></script> 
-    <script src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
     <script src="http://stage-preview.gage.com/Creative/Microsoft/EZCourseDemo/scripts/jquery.jsPlumb-1.3.16-all-min.js"></script>
+     <script src="<c:url value="/resources/js/jquery.ui.touch-punch.min.js" />"></script>
     <script>
-        
+ 
         $(function () {
 
             //Make element draggable
@@ -165,15 +166,7 @@
                 }
             });
             
-            $("#bolest14").droppable({
-                accept: '#peckanje,#iscrpljenost',
-                activeClass: "drop-area",
-                drop: function (e, ui) {
-                	if(ui.draggable[0].id=='peckanje'){connectPeckanje();}
-                	else if(ui.draggable[0].id=='iscrpljenost'){connectIscrpljenost();}
-        
-                }
-            });
+          
         })
         
        
@@ -375,10 +368,7 @@ function connectPeckanje(){
     e1 = jsPlumb.addEndpoint($("#bolest13")); 
     jsPlumb.connect({ source: e0, target: e1 });
     
-    jsPlumb.removeAllEndpoints();
-    e0 = jsPlumb.addEndpoint($("#peckanje"));
-    e1 = jsPlumb.addEndpoint($("#bolest14")); 
-    jsPlumb.connect({ source: e0, target: e1 });
+    
     }
 function connectIscrpljenost()
 {
@@ -411,14 +401,7 @@ function connectIscrpljenost()
     e0 = jsPlumb.addEndpoint($("#iscrpljenost"));
     e1 = jsPlumb.addEndpoint($("#bolest11")); 
     jsPlumb.connect({ source: e0, target: e1 });
-    
-    jsPlumb.removeAllEndpoints();
-    e0 = jsPlumb.addEndpoint($("#iscrpljenost"));
-    e1 = jsPlumb.addEndpoint($("#bolest14")); 
-    jsPlumb.connect({ source: e0, target: e1 });
-    
-    
-	
+   
 }
 function connectTemperatura ()
 {
@@ -500,7 +483,7 @@ jsPlumb.connect({ source: e0, target: e1 });
     <li><div class="question-word" id="bolest10">HIV/AIDS </div></li>
     <li><div class="question-word" id="bolest11">Hepatitis B i C </div></li>
      <li><div class="question-word" id="bolest13">Stidne vaši </div></li>
-    <li><div class="question-word" id="bolest14">Herpes </div></li>
+ 
     
      </ul>
       </div>

@@ -170,7 +170,7 @@ $(function(){
         $('#data').val('');
         displayWord();
      
-        var left=Math.floor((Math.random() * ($('.playing-area').width()-50)) + 5);
+        var left=Math.floor((Math.random() * ($('.playing-area').width()-$('.word').width()-100)));
         $('.word').css({
             'left': left + 'px',
            
