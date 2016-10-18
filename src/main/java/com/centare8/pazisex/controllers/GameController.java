@@ -125,7 +125,7 @@ public class GameController {
         }
         else if(game.getGameID()==7)
         {
-        	return new ModelAndView("codePage","game",game);
+        	 return new ModelAndView("introductionPPI","dummy","");
         	
         }
         else if(game.getGameID()==8)

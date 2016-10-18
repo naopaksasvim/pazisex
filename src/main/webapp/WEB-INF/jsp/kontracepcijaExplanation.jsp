@@ -29,6 +29,7 @@
 		 <br/>
 		
 		<br>
+		<a href="/pazisex/game/getGame/56" >Igraj ponovo</a>
 		<a href="/pazisex/game/getGame/99">Nastavi</a>
 	</div>
 </div>

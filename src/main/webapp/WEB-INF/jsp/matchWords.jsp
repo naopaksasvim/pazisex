@@ -456,7 +456,7 @@ jsPlumb.connect({ source: e0, target: e1 });
 <div class="content words-holder">
 	<div class="header-logo"></div>
 		<h1 class="entry-title">${game.gameName}</h1>
-		<div id="time" class="absolute"></div>
+		<!-- <div id="time" class="absolute"></div> -->
     <div class="clearfix">
     <ul class="words-left">
     	<li><div id="sekret" class="question-word js_drag js_simpt1">Sekret</div></li>
@@ -494,7 +494,7 @@ jsPlumb.connect({ source: e0, target: e1 });
 <script>
 
 
-function startTimer(duration, display) {
+/* function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10);
@@ -518,7 +518,7 @@ jQuery(function ($) {
     var duration = 60 * 5,
         display = $('#time');
     startTimer(duration, display);
-});
+}); */
 </script>
 </body>
 </html>

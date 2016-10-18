@@ -25,7 +25,11 @@
 	<div class="header-logo"></div>
 	<div class="text-wrap relative">
 		<h1 class="entry-title">${game.gameName}</h1>
-		<div id="time" class="absolute"></div>
+		<c:if test="${game.gameID==5}">
+				<a href="/pazisex/game/getGame/4">Nazad</a>
+				<br>
+				</c:if>
+		<!-- <div id="time" class="absolute"></div> -->
 		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form">
 		  	<input type="hidden" name="gameID" value="${game.gameID}"/>
 	    	<input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
@@ -51,14 +55,16 @@
 		   			</li>
 				</c:forEach>
 			</ul>
+				
 			<input type="submit" value="Snimi" disabled="disabled"/>
+			
 		     
 		</form:form>
 	</div>
 </div>
 <aside class="right"></aside>
 <script>
-function startTimer(duration, display) {
+/* function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10);
@@ -74,7 +80,15 @@ function startTimer(duration, display) {
   
         }
     }, 1000);
-}
+} 
+
+jQuery(function ($) {
+	console.log($("#duration").val());
+	minutes=$("#duration").val();
+    var duration = 60 * minutes,
+        display = $('#time');
+    startTimer(duration, display);
+});*/
 function enable()
 {
 
@@ -91,13 +105,7 @@ function enable()
 	    }
 	}
 	
-jQuery(function ($) {
-	console.log($("#duration").val());
-	minutes=$("#duration").val();
-    var duration = 60 * minutes,
-        display = $('#time');
-    startTimer(duration, display);
-});
+
 </script>
 </body>
 </html>

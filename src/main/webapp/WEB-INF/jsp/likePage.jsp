@@ -22,18 +22,19 @@
 		<div class="text-wrap text-center">
 		<h1 class="entry-title">Podrzi nas na fejsu</h1>
 
-		<div class="fb-like" data-href="https://www.facebook.com/pazisex/" data-width="400px" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+		<div class="fb-like" data-href="https://www.facebook.com/CentarE8/" data-width="400px" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
 			<a href="/pazisex/game/introduction" style="margin-top: 40px; display: block;">Nastavi</a>
 		</div>
 		
 	</div>
  	<div id="fb-root"></div>
  	<aside class="right"></aside>
+
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=192908047562303";
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=192908047562303";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 

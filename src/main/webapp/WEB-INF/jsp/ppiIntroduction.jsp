@@ -23,12 +23,14 @@
 	<div class="header-logo"></div>
 	<div class="text-wrap text-center">
 		<h1 class="entry-title">PPI</h1>
+		
+		
 		<p>
 				U najboljem slučaju, tela su nam zdrava, ali u nekim slučajevima nisu… 
 				<br>
 				Klikni na bolesti i infekcije koje se smatraju polno prenosivim, odnosno koje se mogu preneti putem seksualnog odnosa (*računaju se one koje i pored seksualnog puta, mogu da se prenesu i na druge načine) 
 		</p>
-		<br>
+		<br><a href="/pazisex/game/getGame/77" >Nazad</a>
 		<a href="/pazisex/game/getGame/3">Nastavi</a>
 	</div>
 </div>

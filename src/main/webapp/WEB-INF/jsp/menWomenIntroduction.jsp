@@ -22,7 +22,7 @@
 <div class="content">
 	<div class="header-logo"></div>
 	<div class="text-wrap text-center">
-		<h1 class="entry-title">Anketa</h1>
+		<h1 class="entry-title">Pol i rod</h1>
 		<p>
 		Počnimo sa pričom o muškim i ženskim stvarima... 
 		<br><br>

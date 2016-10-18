@@ -23,7 +23,7 @@
 	<div class="header-logo"></div>
 	<div class="text-wrap" style="position: relative;">
 		<h1 class="entry-title" style="margin-bottom: 80px;">${game.gameName}</h1>
-		<div id="time" class="entry-title" style="position: absolute; top: -20px; right: 5px;"></div>
+		<!-- <div id="time" class="entry-title" style="position: absolute; top: -20px; right: 5px;"></div> -->
 		<form:form method="get" action="/pazisex/game/getGame/99" >
 			<input type="hidden" name="game.gameID" value="${game.gameID}"/>
 			<input type="hidden" name="game.durationMin" id="duration" value="${game.durationMin}"/>
@@ -64,7 +64,7 @@
 <aside class="right"></aside>
 <script>
 
-function startTimer(duration, display) {
+/* function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10);
@@ -88,7 +88,7 @@ jQuery(function ($) {
         display = $('#time');
     startTimer(duration, display);
 });
-
+ */
 $(function(){
 
     var score = 0,

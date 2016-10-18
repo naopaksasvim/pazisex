@@ -27,9 +27,14 @@
 		<p>Hvala  ti što si prošao/la ovaj put sa nama, nadamo se da si nešto naučio/la,  i šta god da odlučiš u vezi sa svojim seksualnim životom, da to bude bez pritisaka i da ta odluka bude odraz tvoje zrelosti da odrediš šta je najbolje za tebe; ako se odlučiš za stupanje u seksualne odnose, da se to desi kada budeš i psihički i fizički spreman/na za to, na bezbedan način koji će očuvati tvoje zdralje. Takođe želimo da ti kažemo da je  u redu ako ne želiš  seks ili osećaš da sad nisi spreman/na. Seks bez potpune spremnosti nema smisla i može biti loš po tebe. Važno je zapamtiti da je za sve nas najbolje da gradimo društvo u kojem smo informisani, poštujemo i međusobno podržavamo jedni druge i odluke koje donosimo.  
  <br><br>
 Ako imaš još pitanja, idi na stranicu  <a href="http://www.pazisex.net">www.pazisex.net</a> <br><br> i dodatno se informiši ukoliko postoji bilo koja nedoumica! </p>
-	
+		<a href="/pazisex/" >Vrati se na početak</a>
+		<br>
+		<br>
+<img src="/pazisex/resources/css/images/logopartneri.png" class="img-responsive" style="margin: 0 auto; max-width: 80%;"/>
 	</div>
+
 </div>
+
 <aside class="right"></aside>
 
 </body>

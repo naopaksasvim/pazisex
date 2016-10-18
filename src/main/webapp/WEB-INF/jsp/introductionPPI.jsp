@@ -96,7 +96,8 @@ showDiv();
 			
 	    if(counter==7)
 	    	{
-	    	window.location = "/pazisex/game/getGame/108"
+	    	setTimeout(function(){window.location = "/pazisex/game/getGame/108"}, time)
+	    	
 	    	}
 	    $('div','#container')
 	      .stop()

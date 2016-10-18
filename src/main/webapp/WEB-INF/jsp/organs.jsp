@@ -18,7 +18,7 @@
 	<div class="header-logo"></div>
 	<div class="text-wrap relative">
 		<h1 class="entry-title">${game.gameName}</h1>
-		<div id="time" class="absolute"></div>
+		<!-- <div id="time" class="absolute"></div> -->
 		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form" style="margin-bottom: 0px;">
 		  	<input type="hidden" name="gameID" value="${game.gameID}"/>
 	    	<input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
@@ -53,7 +53,7 @@
 </div>
 <aside class="right"></aside>
 <script>
-function startTimer(duration, display) {
+/* function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10);
@@ -69,7 +69,7 @@ function startTimer(duration, display) {
         //	timer = duration;
         }
     }, 1000);
-}
+} */
 var i=0;
 function enable(element,e)
 {
@@ -92,14 +92,15 @@ else
 	
 	}
 	
-jQuery(function ($) {
-	$('#quest0').show();
+ jQuery(function ($) {
+	 $('#quest0').show();
+	 /*
 	minutes=$("#duration").val();
     var duration = 60 * minutes,
         display = $('#time');
-    startTimer(duration, display);
+    startTimer(duration, display);*/
 });
-
+ 
 </script>
 </body>
 </html>

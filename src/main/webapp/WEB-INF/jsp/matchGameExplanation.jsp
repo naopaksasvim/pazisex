@@ -35,6 +35,7 @@
 		
 		</p>
 		<br>
+		<a href="/pazisex/game/getGame/55" >Igraj ponovo</a>
 		<a href="/pazisex/game/getGame/57">Nastavi</a>
 	</div>
 </div>

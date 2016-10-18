@@ -24,6 +24,8 @@
 	<form:form method="post" action="../user/saveUser" modelAttribute="user">
 <div class="text-wrap text-center">
 <h1 class="entry-title">Uloguj se</h1>
+<a href="/pazisex/game/getGame/5" style="text-align:left;">Nazad</a>
+<br>
  <p>Hvala! <br/> A sada da počnemo…. Ako želiš uloguj se….. ako ne želiš, nastavićemo sa radionicom kao i do sada.. </p>
  	</div>
  	<ul class="input-fields">

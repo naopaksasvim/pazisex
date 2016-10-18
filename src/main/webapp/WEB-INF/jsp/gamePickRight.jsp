@@ -25,10 +25,10 @@
 	<div class="header-logo"></div>
 	<div class="text-wrap text-center bubble-holder">
 	<h1 class="entry-title">${game.gameName}</h1>
-	<div id="time"></div>
+	<!-- <div id="time"></div> -->
 		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form">
 			<input type="hidden" name="gameID" value="${game.gameID}"/>
-		   	<input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
+		  <!--  	<input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> --> 
 				<ul>
 					<c:forEach items="${game.questions}" var="question" varStatus="status">
 					<li>
@@ -58,7 +58,7 @@
 </div>
 <aside class="right"></aside>
 <script>
-function startTimer(duration, display) {
+/* function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10);
@@ -73,7 +73,7 @@ function startTimer(duration, display) {
         	 $('form').submit();
         }
     }, 1000);
-}
+} */
 function markincorrect(e,value)
 {
 	if(value==false)
@@ -81,13 +81,13 @@ function markincorrect(e,value)
 		$(e).parent().find('i').addClass( "wrong" );
 		}
 	}
-jQuery(function ($) {
+/* jQuery(function ($) {
 	console.log($("#duration").val());
 	minutes=$("#duration").val();
     var duration = 60 * minutes,
         display = $('#time');
     startTimer(duration, display);
-});
+}); */
 </script>
 </body>
 </html>

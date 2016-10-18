@@ -25,7 +25,7 @@
 	<div class="header-logo"></div>
 	<div class="text-wrap text-center bubble-holder">
 	<h1 class="entry-title">Označi koje su to “prirodne metode”</h1>
-	<div id="time"></div>
+<!-- 	<div id="time"></div> -->
 		<form:form method="post" action="/pazisex/game/save" modelAttribute="game" class="radio-form">
 			<input type="hidden" name="gameID" value="${game.gameID}"/>
 		   	<input type="hidden" name="durationMin" id="duration" value="${game.durationMin}"/> 
@@ -56,7 +56,7 @@
 </div>
 <aside class="right"></aside>
 <script>
-function startTimer(duration, display) {
+/* function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10);
@@ -72,13 +72,6 @@ function startTimer(duration, display) {
         }
     }, 1000);
 }
-function markincorrect(e,value)
-{
-	if(value==false)
-		{
-		$(e).parent().find('i').addClass( "wrong" );
-		}
-	}
 jQuery(function ($) {
 	console.log($("#duration").val());
 	minutes=$("#duration").val();
@@ -86,6 +79,15 @@ jQuery(function ($) {
         display = $('#time');
     startTimer(duration, display);
 });
+*/
+function markincorrect(e,value)
+{
+	if(value==false)
+		{
+		$(e).parent().find('i').addClass( "wrong" );
+		}
+	}
+
 </script>
 </body>
 </html>
