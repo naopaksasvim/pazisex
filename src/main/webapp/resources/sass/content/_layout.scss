@@ -507,6 +507,7 @@ aside{
 .table{
     border-collapse: separate;
     border-spacing: 10px;
+    empty-cells: hide;
 
     th,
     td{
